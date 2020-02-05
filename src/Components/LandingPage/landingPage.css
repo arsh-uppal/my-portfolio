@@ -1,3 +1,6 @@
+/***************************/
+/**********Grid*************/
+/***************************/
 .top {
     height: 10vh;
     background-color: bisque;
@@ -9,6 +12,30 @@
 }
 
 .bottom {
-    height: 40vh;
+    height: 50vh;
+    text-align: center;
     background-color: cyan;
+}
+
+.secondTop {
+    height: 50vh;
+    background-color: burlywood;
+}
+
+/***************************/
+/*********Mountains*********/
+/***************************/
+.firstMountain {
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.secondMountain {
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.thirdMountain {
+    margin: auto;
+    margin-top: 10vh;
 }

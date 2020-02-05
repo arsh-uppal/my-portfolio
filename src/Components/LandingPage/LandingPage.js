@@ -1,8 +1,11 @@
 import React from 'react';
+import './landingPage.css';
+import Mountain from '../SharedComponents/Mountain';
+
+/********Material imports********/
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import './landingPage.css';
 import { Hidden } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -44,7 +47,11 @@ export default function LandingPage() {
                     </Grid>
                 </Hidden>
                 <Grid item xs={12} className="bottom">
-                    Mountain
+                        <Mountain bgColor="yellow" className="firstMountain"/>
+                        <Mountain bgColor="yellow" className="secondMountain"/>
+                        <Mountain bgColor="yellow" className="thirdMountain"/>
+                </Grid>
+                <Grid item xs={12} className="secondTop">
                 </Grid>
             </Grid>
         </div>
