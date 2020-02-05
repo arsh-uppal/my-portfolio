@@ -1,0 +1,14 @@
+.top {
+    height: 10vh;
+    background-color: bisque;
+}
+
+.mid {
+    height: 50vh;
+    background-color: burlywood;
+}
+
+.bottom {
+    height: 40vh;
+    background-color: cyan;
+}
