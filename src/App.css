@@ -6,4 +6,5 @@ body::-webkit-scrollbar {
 /* Hide scrollbar for IE and Edge */
 body {
     -ms-overflow-style: none;
+    width: 100%;
 }

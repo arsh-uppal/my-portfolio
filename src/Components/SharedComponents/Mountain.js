@@ -5,16 +5,16 @@ import React from 'react';
 export default function Mountain(props) {
     
     let mountainStyle = {
-        "width": 500,
-        "height": "40vh",
+        "width": "33vw",
+        "height": "35vh",
         "backgroundColor": props.bgColor,
-        "borderTopLeftRadius": 250,
-        "borderTopRightRadius": 250,
+        "borderTopLeftRadius": 260,
+        "borderTopRightRadius": 260,
         "borderBottom": 0,
     }
 
     return(
-        <div>
+        <div style={{"zIndex":props.zindex,}}>
             {props.color}
             <div style={mountainStyle} className={props.className}></div>
         </div>

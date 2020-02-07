@@ -47,9 +47,9 @@ export default function LandingPage() {
                     </Grid>
                 </Hidden>
                 <Grid item xs={12} className="bottom">
-                        <Mountain bgColor="yellow" className="firstMountain"/>
-                        <Mountain bgColor="yellow" className="secondMountain"/>
-                        <Mountain bgColor="yellow" className="thirdMountain"/>
+                        <Mountain bgColor="yellow" className="firstMountain" zindex="4"/>
+                        <Mountain bgColor="blue" className="secondMountain" zindex="2"/>
+                        <Mountain bgColor="red" className="thirdMountain" zindex="3"/>
                 </Grid>
                 <Grid item xs={12} className="secondTop">
                 </Grid>
