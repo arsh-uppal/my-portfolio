@@ -1,18 +1,47 @@
 /***************************/
 /**********Grid*************/
 /***************************/
-.top {
-    height: 10vh;
+.topLogo {
+    height: 80px;
     background-color: bisque;
 }
 
-.mid {
-    height: 60vh;
-    background-color: burlywood;
+.centePiece {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}   
+
+.cloudLeft {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: auto;
+    top: 150x;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.cloudRight {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: auto;
+    top: -150px;
+    left: -150px;
+    right: 0;
+    bottom: 0;
 }
 
 .bottom {
-    height: 50vh;
+    height: 300px;
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -29,7 +58,7 @@
 /***************************/
 .firstMountain {
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 100px;
     margin-left: 65%;
     animation-name: mountainDrop;
     animation-duration: 3s;
@@ -39,7 +68,7 @@
 
 .secondMountain {
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 60px;
     /* margin-left: 5%; */
     animation-name: mountainDrop;
     animation-duration: 2s;
@@ -49,7 +78,7 @@
 .thirdMountain {
     margin: auto;
     margin-left: -60%;
-    margin-top: 15vh;
+    margin-top: 100px;
     animation-name: mountainDrop;
     animation-duration: 3s;
     animation-timing-function: linear;

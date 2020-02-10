@@ -5,11 +5,11 @@ import React from 'react';
 export default function Mountain(props) {
     
     let mountainStyle = {
-        "width": "33vw",
-        "height": "35vh",
+        "width": "400px",
+        "height": "200px",
         "backgroundColor": props.bgColor,
-        "borderTopLeftRadius": 260,
-        "borderTopRightRadius": 260,
+        "borderTopLeftRadius": "200px",
+        "borderTopRightRadius": "200px",
         "borderBottom": 0,
     }
 
