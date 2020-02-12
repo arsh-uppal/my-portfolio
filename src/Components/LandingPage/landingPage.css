@@ -45,7 +45,7 @@
     display: flex;
     width: 100vw;
     justify-content: center;
-    background-color: cyan;
+    background-color: #e0ebe8;
 }
 
 .secondTop {
@@ -68,7 +68,7 @@
 
 .secondMountain {
     margin: auto;
-    margin-top: 60px;
+    margin-top: 50px;
     /* margin-left: 5%; */
     animation-name: mountainDrop;
     animation-duration: 2s;
@@ -86,7 +86,7 @@
 
 @keyframes mountainDrop {
     0%   {
-        margin-top: -50px;
+        margin-top: 0px;
     }
     50%  {
         margin-top: 50px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './landingPage.css';
 import Mountain from '../SharedComponents/Mountain';
-
+import Nav from '../NavBar/Nav';
 /********Material imports********/
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -56,14 +56,6 @@ export default function LandingPage() {
         <div className={classes.root}>
             <Grid container spacing={0}>
                 <Hidden xsDown>
-                    <Grid item sm={4} className="topLogo">
-                        <img src={require("../../images/icon.png")} alt="logo" className={classes.logo} />
-                    </Grid>
-                </Hidden>
-                <Grid item xs={12} sm={8} className={classes.nav}>
-                    Nav
-                </Grid>
-                <Hidden xsDown>
                     <Grid item xs={12} sm={3} className={classes.midLeft}>
                         <img src={require("../../images/cloud.png")} alt="logo" className="cloudLeft"/>
                     </Grid>
@@ -77,9 +69,16 @@ export default function LandingPage() {
                     </Grid>
                 </Hidden>
                 <Grid item xs={12} className="bottom">
-                    <Mountain bgColor="yellow" className="firstMountain" zindex="4" />
-                    <Mountain bgColor="blue" className="secondMountain" zindex="2" />
-                    <Mountain bgColor="red" className="thirdMountain" zindex="3" />
+                    <img src={require("../../images/house1.png")} alt="house1"
+                    style={{height:50, width:50, position:"absolute", marginTop:10,
+                    marginLeft:30}}/>
+                    <Mountain bgColor="#45b29a" className="firstMountain" zindex="4" />
+                    <img src={require("../../images/house2.png")} alt="house1"
+                    style={{height:50, width:50, position:"absolute", marginTop:75,
+                    marginLeft:-180, zIndex:4
+                    }}/>
+                    <Mountain bgColor="#328a76" className="secondMountain" zindex="2" />
+                    <Mountain bgColor="white" className="thirdMountain" zindex="3" />
                 </Grid>
                 <Grid item xs={12} className="secondTop">
                 </Grid>
