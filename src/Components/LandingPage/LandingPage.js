@@ -1,6 +1,7 @@
 import React from 'react';
 import './landingPage.css';
 import Mountain from '../SharedComponents/Mountain';
+import CenterText from '../SharedComponents/CenterText';
 import Nav from '../NavBar/Nav';
 /********Material imports********/
 import { makeStyles } from '@material-ui/core/styles';
@@ -61,7 +62,8 @@ export default function LandingPage() {
                     </Grid>
                 </Hidden>
                 <Grid item xs={12} sm={6} className={classes.midCentre}>
-                    <img src={require("../../images/iamarsh.png")} alt="logo" className="centePiece"/>
+                    {/* <img src={require("../../images/iamarsh.png")} alt="logo" className="centePiece"/> */}
+                    <CenterText />
                 </Grid>
                 <Hidden xsDown>
                     <Grid item xs={12} sm={3} className={classes.midRight}>
