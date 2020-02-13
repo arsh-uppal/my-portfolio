@@ -27,8 +27,9 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: "#e0ebe8",
         boxShadow:"none",
         [theme.breakpoints.down('xs')]: {
-            height: "60px",
+            height: "80px",
             width:  "100vw",
+            position: "absolute",
         }
     }
 }));

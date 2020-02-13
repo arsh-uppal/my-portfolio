@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme => ({
     height: "120px",
     backgroundColor: "#e0ebe8",
     [theme.breakpoints.down('xs')]: {
-      height: "60px",
+      height: "80px",
+      width:  "100vw"
     }
   }
 }));

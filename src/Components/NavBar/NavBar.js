@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 50,
     marginLeft: "22vw",
     [theme.breakpoints.down('xs')]: {
-      marginLeft: "3vw",
+      marginLeft: "5vw",
     },
   },
 }));

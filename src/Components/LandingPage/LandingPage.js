@@ -11,6 +11,7 @@ import { Hidden } from '@material-ui/core';
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
+        overflow: "hidden",
     },
     paper: {
         padding: theme.spacing(2),
