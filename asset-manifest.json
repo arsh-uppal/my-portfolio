@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.54153d44.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.22f3c06f.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.22f3c06f.chunk.js.map",
-    "runtime-main.js": "/my-portfolio/static/js/runtime-main.d96a2d46.js",
-    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.d96a2d46.js.map",
-    "static/js/2.c100594c.chunk.js": "/my-portfolio/static/js/2.c100594c.chunk.js",
-    "static/js/2.c100594c.chunk.js.map": "/my-portfolio/static/js/2.c100594c.chunk.js.map",
-    "index.html": "/my-portfolio/index.html",
-    "precache-manifest.eb5e9d280a200c7e6e7c449d0cfb1a2c.js": "/my-portfolio/precache-manifest.eb5e9d280a200c7e6e7c449d0cfb1a2c.js",
-    "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.54153d44.chunk.css.map": "/my-portfolio/static/css/main.54153d44.chunk.css.map",
-    "static/js/2.c100594c.chunk.js.LICENSE": "/my-portfolio/static/js/2.c100594c.chunk.js.LICENSE",
-    "static/media/cloud.svg": "/my-portfolio/static/media/cloud.f086b92c.svg",
-    "static/media/myLogo.png": "/my-portfolio/static/media/myLogo.cb5ce076.png"
+    "main.css": "/static/css/main.54153d44.chunk.css",
+    "main.js": "/static/js/main.30a4033c.chunk.js",
+    "main.js.map": "/static/js/main.30a4033c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e3441cc1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e3441cc1.js.map",
+    "static/js/2.c100594c.chunk.js": "/static/js/2.c100594c.chunk.js",
+    "static/js/2.c100594c.chunk.js.map": "/static/js/2.c100594c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.90495c5370d46d74f37160396295a695.js": "/precache-manifest.90495c5370d46d74f37160396295a695.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.54153d44.chunk.css.map": "/static/css/main.54153d44.chunk.css.map",
+    "static/js/2.c100594c.chunk.js.LICENSE": "/static/js/2.c100594c.chunk.js.LICENSE",
+    "static/media/cloud.svg": "/static/media/cloud.f086b92c.svg",
+    "static/media/myLogo.png": "/static/media/myLogo.cb5ce076.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d96a2d46.js",
+    "static/js/runtime-main.e3441cc1.js",
     "static/js/2.c100594c.chunk.js",
     "static/css/main.54153d44.chunk.css",
-    "static/js/main.22f3c06f.chunk.js"
+    "static/js/main.30a4033c.chunk.js"
   ]
 }
