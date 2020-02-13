@@ -31,19 +31,19 @@ const useStyles = makeStyles(theme => ({
     },
     midLeft: {
         height: "55vh",
-        backgroundColor: "burlywood",
+        backgroundColor: "#e0ebe8",
         textAlign: "center",
         position: "relative",
     },
     midCentre: {
         height: "55vh",
-        backgroundColor: "pink",
+        backgroundColor: "#e0ebe8",
         textAlign: "center",
         position: "relative",
     },
     midRight: {
         height: "55vh",
-        backgroundColor: "burlywood",
+        backgroundColor: "#e0ebe8",
         textAlign: "center",
         position: "relative",
     },
@@ -57,15 +57,15 @@ export default function LandingPage() {
             <Grid container spacing={0}>
                 <Hidden xsDown>
                     <Grid item xs={12} sm={3} className={classes.midLeft}>
-                        <img src={require("../../images/cloud.png")} alt="logo" className="cloudLeft"/>
+                        <img src={require("../../images/cloud.svg")} alt="logo" className="cloudLeft"/>
                     </Grid>
                 </Hidden>
                 <Grid item xs={12} sm={6} className={classes.midCentre}>
-                    <img src={require("../../images/icon.png")} alt="logo" className="centePiece"/>
+                    <img src={require("../../images/iamarsh.png")} alt="logo" className="centePiece"/>
                 </Grid>
                 <Hidden xsDown>
                     <Grid item xs={12} sm={3} className={classes.midRight}>
-                    <img src={require("../../images/cloud.png")} alt="logo" className="cloudRight"/>
+                    <img src={require("../../images/cloud.svg")} alt="logo" className="cloudRight"/>
                     </Grid>
                 </Hidden>
                 <Grid item xs={12} className="bottom">

@@ -22,9 +22,10 @@ function HideOnScroll(props) {
 
 const useStyles = makeStyles(theme => ({
     styleNav: {
-        height: "80px",
+        height: "120px",
         width:"67vw",
-        backgroundColor: "red",
+        backgroundColor: "#e0ebe8",
+        boxShadow:"none",
         [theme.breakpoints.down('xs')]: {
             height: "60px",
             width:  "100vw",
@@ -40,7 +41,8 @@ export default function Nav(props) {
             <HideOnScroll {...props}>
                 <AppBar className={classes.styleNav}>
                     <Toolbar >
-                        <NavBar />
+                        <div style={{textAlign:"center", width:"100%"}}>
+                        <NavBar /></div>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>

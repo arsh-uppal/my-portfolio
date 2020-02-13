@@ -13,20 +13,16 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
   logo: {
-    width: "70px",
-    height: "70px",
-    paddingLeft: 100,
-    paddingTop: 6,
+    width: "100px",
+    height: "95px",
+    paddingLeft: "12vw",
+    paddingTop: 23,
+    zIndex:2,
   },
   nav: {
-    height: "80px",
-    backgroundColor: "yellow",
+    height: "120px",
+    backgroundColor: "#e0ebe8",
     [theme.breakpoints.down('xs')]: {
       height: "60px",
     }
@@ -41,7 +37,7 @@ function App() {
         <Grid container spacing={0}>
           <Hidden xsDown>
             <Grid item sm={4} className="topLogo">
-              <img src={require("./images/icon.png")} alt="logo" className={classes.logo} />
+              <img src={require("./images/myLogo.png")} alt="logo" className={classes.logo} />
             </Grid>
           </Hidden>
           <Grid item xs={12} sm={8} className={classes.nav}>

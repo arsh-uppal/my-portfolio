@@ -2,42 +2,44 @@
 /**********Grid*************/
 /***************************/
 .topLogo {
-    height: 80px;
-    background-color: bisque;
+    height: 120px;
+    background-color: #e0ebe8;
 }
 
 .centePiece {
-    width: 150px;
+    width: 250px;
     height: 150px;
     position: absolute;
     margin: auto;
     top: 0;
-    left: 0;
+    left: -12px;
     right: 0;
     bottom: 0;
 }   
 
 .cloudLeft {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     margin: auto;
     top: 150x;
-    left: 150px;
+    left: 20vw;
     right: 0;
     bottom: 0;
     z-index: 2;
+    opacity: 0.9;
 }
 
 .cloudRight {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     margin: auto;
     top: -150px;
-    left: -150px;
+    left: -20vw;
     right: 0;
     bottom: 0;
+    opacity: 0.8;
 }
 
 .bottom {

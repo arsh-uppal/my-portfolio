@@ -7,16 +7,22 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
   linkStyle: {
-    color: 'black',
+    paddingRight: "4vw",
+    color:"rgb(50, 138, 118)",
     fontSize: '1.1em',
     textDecoration: 'none',
-    fontFamily: 'sans-serif',
+    fontFamily: "Comic Sans MS, cursive, sans-serif",
     [theme.breakpoints.down('xs')]: {
-      textAlign : 'center',
+      paddingRight: "8vw"
     },
-
-  }
-
+  },
+  navPos : {
+    paddingTop: 50,
+    marginLeft: "22vw",
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: "3vw",
+    },
+  },
 }));
 
 export default function NavBar() {
@@ -25,7 +31,7 @@ export default function NavBar() {
   const preventDefault = event => event.preventDefault();
 
   return (
-    <div>
+    <div className={classes.navPos}>
       <Typography>
           <Link to="/" className={classes.linkStyle}>
             About
@@ -34,7 +40,7 @@ export default function NavBar() {
             Skills
           </Link>
           <Link to="/" onClick={preventDefault} className={classes.linkStyle}>
-            Contact
+            Experience
           </Link>
       </Typography>
     </div>
