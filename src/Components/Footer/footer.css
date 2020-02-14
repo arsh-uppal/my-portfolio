@@ -1,0 +1,28 @@
+.footerContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.socialContainer {
+    position: absolute;
+    width: 500px;
+    height: 70px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.socialImages img {
+    height: 55px; 
+    width: 55px; 
+    margin-top: 10px;
+}
+
+.socialImages .imgFollow {
+    margin-left: 50px;
+}
+

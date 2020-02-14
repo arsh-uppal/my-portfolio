@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   linkStyle: {
     paddingRight: "4vw",
     color:"rgb(50, 138, 118)",
-    fontSize: '1.1em',
+    fontSize: '1.2em',
     textDecoration: 'none',
     fontFamily: "Comic Sans MS, cursive, sans-serif",
     [theme.breakpoints.down('xs')]: {

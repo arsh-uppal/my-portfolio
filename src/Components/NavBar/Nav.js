@@ -43,7 +43,8 @@ export default function Nav(props) {
                 <AppBar className={classes.styleNav}>
                     <Toolbar >
                         <div style={{textAlign:"center", width:"100%"}}>
-                        <NavBar /></div>
+                            <NavBar />
+                        </div>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>

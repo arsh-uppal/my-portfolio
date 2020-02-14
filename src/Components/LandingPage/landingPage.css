@@ -40,8 +40,13 @@
 }
 
 .secondTop {
-    height: 50vh;
-    background-color: burlywood;
+    height: 98vh;
+    background-color: white;
+}
+
+.footer {
+    height: 20vh;
+    background-color:#e0ebe8;
 }
 
 /***************************/
@@ -91,7 +96,7 @@
 /***************************/
 
 .centerPiece {
-    width: 200px;
+    width: 215px;
     height: 150px;
     position: absolute;
     margin: auto;
@@ -104,7 +109,7 @@
 .typewriter p {
     color: rgb(50, 138, 118);
     font-size: 2em;
-    font-family: cursive, sans-serif;
+    font-family: 'Jura', sans-serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(69, 178, 154); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */

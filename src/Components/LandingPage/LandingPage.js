@@ -2,6 +2,7 @@ import React from 'react';
 import './landingPage.css';
 import Mountain from '../SharedComponents/Mountain';
 import CenterText from '../SharedComponents/CenterText';
+import Footer from '../Footer/Footer';
 import Nav from '../NavBar/Nav';
 /********Material imports********/
 import { makeStyles } from '@material-ui/core/styles';
@@ -84,6 +85,9 @@ export default function LandingPage() {
                     <Mountain bgColor="white" className="thirdMountain" zindex="3" />
                 </Grid>
                 <Grid item xs={12} className="secondTop">
+                </Grid>
+                <Grid item xs={12} className="footer">
+                    <Footer/>
                 </Grid>
             </Grid>
         </div>
