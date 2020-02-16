@@ -3,7 +3,6 @@
     height: 100%;
     text-align: center;
     position: absolute;
-    background-color: white;
 }
 
 .innerDivAbooutMe {
@@ -15,7 +14,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: darkkhaki; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -31,19 +29,23 @@
 
 .textAboutMe {
     color:rgb(50, 138, 118);
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: 600;
     font-family: "Comic Sans MS" cursive sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
     .textAboutMe {
-        font-size: 2.5vw;
+        font-size: 16px;
     }
 }
 /***********************************************************/
 /* About section */
 /***********************************************************/
+/**********************************************/
+/***************Front end info******************/
+/**********************************************/
+
 .outerDivfrondEndInfo {
     width: 100%;
     height: 100%;
@@ -54,14 +56,14 @@
 
 .innerDivfrondEndInfo {
     width: 60%;
-    height: 90%;
+    height: 100%;
     position: absolute;
     margin: auto;
     top: 0;
-    left: 35%;
+    left: 40%;
     right: 0;
     bottom: 0;
-    /*background-color: darkkhaki; */
+    /* background-color: whitesmoke; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,12 +74,20 @@
 }
 
 .textfrondEndInfo {
-    padding: 5% 10px 0 10px;
+    position: absolute;
+    margin: auto;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background-color: white;
 }
 
 @media only screen and (max-width: 600px) {
     .textfrondEndInfo {
         padding: 0 0 0 0;
+        top: -50px;
     }
 }
 
@@ -96,9 +106,9 @@
     margin: auto;
     top: 0;
     left: 0;
-    right: 45%;
+    right: 40%;
     bottom: 0;
-    background-color: darkkhaki;
+    background-color: #e0ebe8;;
     border-radius: 50%;
 }
 
@@ -108,4 +118,99 @@
         height: 100px;
         right: 0;
     }
+}
+
+.imgfrontEndTools {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/**********************************************/
+/***************Back end info******************/
+/**********************************************/
+.outerDivbackEndInfo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    /* background-color: rgb(139, 133, 133); */
+    margin-top: -20px;
+}
+
+.innerDivbackEndInfo {
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 40%;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .innerDivbackEndInfo {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.textbackEndInfo {
+    position: absolute;
+    margin: auto;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .textbackEndInfo {
+        padding: 0 0 0 0;
+        top: -60px;
+    }
+}
+
+.outerDivbackEndTools {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    /* background-color: rgb(240, 21, 21); */
+    margin-top: -20px;
+}
+
+.innerDivbackEndTools {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    background-color: #e0ebe8;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .innerDivbackEndTools {
+        width: 100px;
+        height: 100px;
+        left: 0;
+    }
+}
+
+hr {
+    position: relative;
+    margin-top: 65px;
+    width: 10%;
+    border: 5px dashed rgb(50, 138, 118);
+    border-radius: 5px;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './aboutMe.css';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,46 +10,93 @@ const useStyles = makeStyles(theme => ({
         overflow: "hidden",
     },
     aboutMe: {
-        height: "85vh"
+        height: 500,
+        //backgroundColor: "blue",
     },
     frondEndInfo: {
         order: 1,
         [theme.breakpoints.down('xs')]: {
             order: 2,
-            height: "24vh",
+            height: 150,
         },
-        height: "48vh",
+        //backgroundColor: "orange",
+        height: 300,
         position: "relative"
     },
     frontEndTools: {
         order: 2,
         [theme.breakpoints.down('xs')]: {
             order: 1,
-            height: "24vh",
+            height: 150,
         },
-        height: "48vh",
+        //backgroundColor: "yellow",
+        height: 300,
         position: "relative"
     },
     backEndInfo: {
-        order: 3,
+        order: 4,
         [theme.breakpoints.down('xs')]: {
-            height: "24vh",
+            height: 150,
         },
-        backgroundColor: "blue", height: "48vh",
+        //backgroundColor: "blue",
+        height: 300,
         position: "relative"
     },
     backEndTools: {
-        order: 4,
+        order: 3,
         [theme.breakpoints.down('xs')]: {
-            height: "24vh",
+            height: 150,
         },
-        backgroundColor: "pink", height: "48vh",
+        //backgroundColor: "pink",
+        height: 300,
         position: "relative"
     }
 }));
 
+let words = ["I am", "Developer.", "Full Stack"];
+
 export default function AboutMe() {
     const classes = useStyles();
+
+    let countWord = 1;
+    const [firstWord, setFirstWord] = useState("I am Arsh");
+
+    useEffect(
+        () => {
+            let timer1 = setTimeout(() => {
+                setFirstWord("Developer");
+            }, 4000);
+
+            return () => {
+                clearTimeout(timer1)
+            }
+        },
+        []
+    )
+
+    useEffect(
+        () => {
+            let timer2 = setTimeout(() => {
+                setFirstWord("Full Stack");
+            }, 5000);
+            return () => {
+                clearTimeout(timer2)
+            }
+        },
+        []
+    )
+    
+    useEffect(
+        () => {
+            let timer2 = setTimeout(() => {
+                setFirstWord("I am Arsh.");
+            }, 6000);
+            return () => {
+                clearTimeout(timer2)
+            }
+        },
+        []
+    )
 
     return (<div className={classes.root}>
         <Grid container spacing={0}>
@@ -63,6 +110,7 @@ export default function AboutMe() {
                             <span className="textAboutMe">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis porttitor est, rutrum pharetra dui. Curabitur et lacus luctus, euismod dui at, tempus dolor.
                             </span>
+                            <hr/>
                         </div>
                     </div>
                 </div>
@@ -73,8 +121,8 @@ export default function AboutMe() {
                     <div className="innerDivfrondEndInfo">
                         <div className="textfrondEndInfo">
                             <span className="textAboutMe">
-                                <h3>Front end</h3>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis porttitor est, rutrum pharetra dui. Curabitur et lacus luctus, euismod dui at, tempus dolor.
+                                <h2>Design what you want.</h2>
+                                I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.
                         </span>
                         </div>
                     </div>
@@ -83,15 +131,33 @@ export default function AboutMe() {
             <Grid item xs={12} sm={5} className={classes.frontEndTools}>
                 <div className="outerDivfrontEndTools">
                     <div className="innerDivfrontEndTools">
-
+                        <div className="imgfrontEndTools">
+                            <img src={require("../../../images/myLogo.png")} alt="logo" 
+                            style={{maxHeight:"90%", maxWidth:"90%", marginTop:"5%"}}/>
+                        </div>
                     </div>
                 </div>
             </Grid>
 
-            <Grid item xs={12} sm={5} className={classes.backEndInfo}>
-                Stack
+            <Grid item xs={12} sm={5} className={classes.backEndTools}>
+                <div className="outerDivbackEndTools">
+                    <div className="innerDivbackEndTools">
+                        <img src={require("../../../images/myLogo.png")} alt="logo" 
+                            style={{maxHeight:"90%", maxWidth:"90%", marginTop:"5%"}}/>
+                    </div>
+                </div>
             </Grid>
-            <Grid item xs={12} sm={7} className={classes.backEndTools}>
+            <Grid item xs={12} sm={7} className={classes.backEndInfo}>
+                <div className="outerDivbackEndInfo">
+                    <div className="innerDivbackEndInfo">
+                        <div className="textbackEndInfo">
+                            <span className="textAboutMe">
+                                <h2>Design what you want.</h2>
+                                I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.
+                        </span>
+                        </div>
+                    </div>
+                </div>
             </Grid>
 
         </Grid>
