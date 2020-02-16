@@ -3,7 +3,7 @@ import './landingPage.css';
 import Mountain from '../SharedComponents/Mountain';
 import CenterText from '../SharedComponents/CenterText';
 import Footer from '../Footer/Footer';
-import Nav from '../NavBar/Nav';
+import AboutMe from '../LandingPage/AboutMe/AboutMe';
 /********Material imports********/
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -85,6 +85,7 @@ export default function LandingPage() {
                     <Mountain bgColor="white" className="thirdMountain" zindex="3" />
                 </Grid>
                 <Grid item xs={12} className="secondTop">
+                    <AboutMe/>
                 </Grid>
                 <Grid item xs={12} className="footer">
                     <Footer/>
