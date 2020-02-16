@@ -17,7 +17,8 @@ const useStyles = makeStyles(theme => ({
         order: 1,
         [theme.breakpoints.down('xs')]: {
             order: 2,
-            height: 150,
+            height: 200,
+            marginTop:-20, 
         },
         //backgroundColor: "orange",
         height: 300,
@@ -27,7 +28,8 @@ const useStyles = makeStyles(theme => ({
         order: 2,
         [theme.breakpoints.down('xs')]: {
             order: 1,
-            height: 150,
+            height: 200,
+            marginTop:40,   
         },
         //backgroundColor: "yellow",
         height: 300,
@@ -36,7 +38,8 @@ const useStyles = makeStyles(theme => ({
     backEndInfo: {
         order: 4,
         [theme.breakpoints.down('xs')]: {
-            height: 150,
+            height: 200,
+            marginTop:-20,
         },
         //backgroundColor: "blue",
         height: 300,
@@ -45,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     backEndTools: {
         order: 3,
         [theme.breakpoints.down('xs')]: {
-            height: 150,
+            height: 200,
         },
         //backgroundColor: "pink",
         height: 300,

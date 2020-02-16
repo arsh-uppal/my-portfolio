@@ -99,6 +99,12 @@
     /* background-color: rgb(240, 21, 21); */
 }
 
+@media only screen and (max-width: 600px) {
+    .outerDivfrontEndTools {
+        
+    }
+}
+
 .innerDivfrontEndTools {
     width: 120px;
     height: 120px;
@@ -114,9 +120,9 @@
 
 @media only screen and (max-width: 600px) {
     .innerDivfrontEndTools {
-        width: 100px;
-        height: 100px;
-        right: 0;
+        width: 140px;
+        height: 140px;
+        right: 0;    
     }
 }
 
@@ -199,14 +205,6 @@
     border-radius: 50%;
 }
 
-@media only screen and (max-width: 600px) {
-    .innerDivbackEndTools {
-        width: 100px;
-        height: 100px;
-        left: 0;
-    }
-}
-
 hr {
     position: relative;
     margin-top: 65px;
@@ -214,3 +212,16 @@ hr {
     border: 5px dashed rgb(50, 138, 118);
     border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    .innerDivbackEndTools {
+        width: 140px;
+        height: 140px;
+        left: 0;
+    }
+
+    hr {
+        margin-top: 55px;
+    }
+}
+
