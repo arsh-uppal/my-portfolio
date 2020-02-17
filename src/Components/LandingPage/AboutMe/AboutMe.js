@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('xs')]: {
             order: 2,
             height: 200,
-            marginTop:-20, 
+            marginTop: -20,
         },
         //backgroundColor: "orange",
         height: 300,
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('xs')]: {
             order: 1,
             height: 200,
-            marginTop:40,   
+            marginTop: 40,
         },
         //backgroundColor: "yellow",
         height: 300,
@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
         order: 4,
         [theme.breakpoints.down('xs')]: {
             height: 200,
-            marginTop:-20,
+            marginTop: -20,
         },
         //backgroundColor: "blue",
         height: 300,
@@ -56,50 +56,60 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-let words = ["I am", "Developer.", "Full Stack"];
-
+let frontDev = ["react", "angular", "js", "html", "css", "photoshop"];
+let backDev = ["java", "spring", "mysql", "rest", "git"];
+let frontDevCounter = 0;
+let backDevCounter = 0;
 export default function AboutMe() {
     const classes = useStyles();
 
-    let countWord = 1;
-    const [firstWord, setFirstWord] = useState("I am Arsh");
-
+    const [frontDevIcon, setfrontDevIcon] = useState(frontDev[0]);
     useEffect(
         () => {
-            let timer1 = setTimeout(() => {
-                setFirstWord("Developer");
-            }, 4000);
+            let interval = setInterval(
+                function () {
+                    setfrontDevIcon(frontDev[frontDevCounter]);
+                    if (frontDevCounter < 5) {
+                        frontDevCounter++;
+                    } else {
+                        frontDevCounter = 0;
+                    }
+                }, 2000
+            );
 
             return () => {
-                clearTimeout(timer1)
+                clearInterval(interval);
             }
         },
         []
     )
 
+    const [backDevIcon, setbackDevIcon] = useState(backDev[0]);
     useEffect(
         () => {
-            let timer2 = setTimeout(() => {
-                setFirstWord("Full Stack");
-            }, 5000);
+            let interval = setInterval(
+                function () {
+                    setbackDevIcon(backDev[backDevCounter]);
+                    if (backDevCounter < 4) {
+                        backDevCounter++;
+                    } else {
+                        backDevCounter = 0;
+                    }
+                }, 3000
+            );
+
             return () => {
-                clearTimeout(timer2)
+                clearInterval(interval);
             }
         },
         []
     )
-    
-    useEffect(
-        () => {
-            let timer2 = setTimeout(() => {
-                setFirstWord("I am Arsh.");
-            }, 6000);
-            return () => {
-                clearTimeout(timer2)
-            }
-        },
-        []
-    )
+
+    let tempFrontDev = frontDevIcon;
+    let urlFrontDevIcon = "/../../../images/techstack/" + tempFrontDev + ".png";
+
+    let tempBackDevIcon = backDevIcon;
+    let urlBackDevIcon = "/../../../images/techstack/" + tempBackDevIcon + ".png";
 
     return (<div className={classes.root}>
         <Grid container spacing={0}>
@@ -113,7 +123,7 @@ export default function AboutMe() {
                             <span className="textAboutMe">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis porttitor est, rutrum pharetra dui. Curabitur et lacus luctus, euismod dui at, tempus dolor.
                             </span>
-                            <hr/>
+                            <hr />
                         </div>
                     </div>
                 </div>
@@ -124,7 +134,7 @@ export default function AboutMe() {
                     <div className="innerDivfrondEndInfo">
                         <div className="textfrondEndInfo">
                             <span className="textAboutMe">
-                                <h2>Design what you want.</h2>
+                                <h2>Design which matters.</h2>
                                 I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.
                         </span>
                         </div>
@@ -135,8 +145,11 @@ export default function AboutMe() {
                 <div className="outerDivfrontEndTools">
                     <div className="innerDivfrontEndTools">
                         <div className="imgfrontEndTools">
-                            <img src={require("../../../images/myLogo.png")} alt="logo" 
-                            style={{maxHeight:"90%", maxWidth:"90%", marginTop:"5%"}}/>
+                            <img src={urlFrontDevIcon} alt="logo"
+                                style={{
+                                    maxHeight: "80%", maxWidth: "80%", marginTop: "12%",
+                                    height: 120, width: 120,
+                                }} />
                         </div>
                     </div>
                 </div>
@@ -145,9 +158,12 @@ export default function AboutMe() {
             <Grid item xs={12} sm={5} className={classes.backEndTools}>
                 <div className="outerDivbackEndTools">
                     <div className="innerDivbackEndTools">
-                        <img src={require("../../../images/myLogo.png")} alt="logo" 
-                            style={{maxHeight:"90%", maxWidth:"90%", marginTop:"5%"}}/>
-                    </div>
+                        <img src={urlBackDevIcon} alt="logo"
+                            style={{
+                                maxHeight: "80%", maxWidth: "80%", marginTop: "11%",
+                                height: 120, width: 120,
+                            }} />
+                    </div> 
                 </div>
             </Grid>
             <Grid item xs={12} sm={7} className={classes.backEndInfo}>
@@ -155,7 +171,7 @@ export default function AboutMe() {
                     <div className="innerDivbackEndInfo">
                         <div className="textbackEndInfo">
                             <span className="textAboutMe">
-                                <h2>Design what you want.</h2>
+                                <h2>A Robust Back End</h2>
                                 I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.
                         </span>
                         </div>

@@ -1,44 +1,27 @@
 import React, { useState, useEffect } from 'react';
 
-let words = ["I am Arsh", "Developer.", "Full Stack"];
+let words = ["I am Arsh", "Developer", "Designer", "Full Stack"];
 
 export default function CenterText() {
 
     let countWord = 1;
-    const [firstWord, setFirstWord] = useState("I am Arsh");
+    const [firstWord, setFirstWord] = useState(words[0]);
 
     useEffect(
         () => {
-            let timer1 = setTimeout(() => {
-                setFirstWord("Developer");
-            }, 4000);
+            let interval = setInterval(
+                function () {
+                    setFirstWord(words[countWord]);
+                    if (countWord < 3) {
+                        countWord++;
+                    } else {
+                        countWord = 0;
+                    }
+                }, 4001
+            );
 
             return () => {
-                clearTimeout(timer1)
-            }
-        },
-        []
-    )
-
-    useEffect(
-        () => {
-            let timer2 = setTimeout(() => {
-                setFirstWord("Full Stack");
-            }, 5000);
-            return () => {
-                clearTimeout(timer2)
-            }
-        },
-        []
-    )
-    
-    useEffect(
-        () => {
-            let timer2 = setTimeout(() => {
-                setFirstWord("I am Arsh.");
-            }, 6000);
-            return () => {
-                clearTimeout(timer2)
+                clearInterval(interval);
             }
         },
         []
