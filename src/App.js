@@ -13,13 +13,6 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  logo: {
-    width: "100px",
-    height: "95px",
-    paddingLeft: "12vw",
-    paddingTop: 23,
-    zIndex:2,
-  },
   nav: {
     height: "120px",
     backgroundColor: "#e0ebe8",
@@ -38,7 +31,7 @@ function App() {
         <Grid container spacing={0}>
           <Hidden xsDown>
             <Grid item sm={4} className="topLogo">
-              <img src={require("./images/myLogo.png")} alt="logo" className={classes.logo} />
+              <img src={require("./images/myLogo.png")} alt="logo" className="logo" />
             </Grid>
           </Hidden>
           <Grid item xs={12} sm={8} className={classes.nav}>

@@ -24,6 +24,7 @@ const useStyles = makeStyles(theme => ({
     styleNav: {
         height: "120px",
         width:"67vw",
+        opacity: "0.9",
         backgroundColor: "#e0ebe8",
         boxShadow:"none",
         [theme.breakpoints.down('xs')]: {

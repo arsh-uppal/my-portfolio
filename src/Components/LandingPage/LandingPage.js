@@ -74,12 +74,39 @@ export default function LandingPage() {
                 </Hidden>
                 <Grid item xs={12} className="bottom">
                     <img src={require("../../images/house1.png")} alt="house1"
-                    style={{height:50, width:50, position:"absolute", marginTop:10,
-                    marginLeft:30}}/>
+                    style={{height:40, width:40, position:"absolute", marginTop:18,
+                    marginLeft:15, }}/>
                     <Mountain bgColor="#45b29a" className="firstMountain" zindex="4" />
-                    <img src={require("../../images/house2.png")} alt="house1"
-                    style={{height:50, width:50, position:"absolute", marginTop:75,
-                    marginLeft:-180, zIndex:4
+                    <img src={require("../../images/house2.png")} alt="house2"
+                    style={{height:55, width:50, position:"absolute", marginTop:75,
+                    marginLeft:-165, zIndex:4
+                    }}/>
+                    <img src={require("../../images/tree4.png")} alt="tree"
+                    style={{height:65, width:60, position:"absolute", marginTop:100,
+                    marginLeft:-222, zIndex:4
+                    }}/>
+                    <img src={require("../../images/tree.png")} alt="tree"
+                    style={{height:65, width:50, position:"absolute", marginTop:130,
+                    marginLeft:-270, zIndex:4
+                    }}/>
+                    <img src={require("../../images/tree4.png")} alt="tree"
+                    style={{height:75, width:70, position:"absolute", marginTop:160,
+                    marginLeft:-310, zIndex:4
+                    }}/>
+
+                    {/* Centre mountain */}
+                    <img src={require("../../images/tree.png")} alt="tree"
+                    style={{height:30, width:25, position:"absolute", marginTop:35,
+                    marginLeft:60, zIndex:4, filter: "contrast(100%)",
+                    }}/>
+                    <img src={require("../../images/tree.png")} alt="tree"
+                    style={{height:40, width:30, position:"absolute", marginTop:65,
+                    marginLeft:-40, zIndex:4, filter: "contrast(100%)",
+                    }}/>
+                    {/* Right mountain */}
+                    <img src={require("../../images/panel.png")} alt="direction"
+                    style={{height:35, width:35, position:"absolute", marginTop:75,
+                    marginLeft:160, zIndex:4
                     }}/>
                     <Mountain bgColor="#328a76" className="secondMountain" zindex="2" />
                     <Mountain bgColor="white" className="thirdMountain" zindex="3" />

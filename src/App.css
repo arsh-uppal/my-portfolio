@@ -8,3 +8,34 @@ body {
     -ms-overflow-style: none;
     width: 100%;
 }
+
+.logo {
+    width: 100px;
+    height: 95px;
+    margin-left: 12vw;
+    margin-top: 23px;
+    z-index:5;
+    animation-name:  logoLoad, rotation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes logoLoad {
+    0%   {margin-left: -12vw;}
+    25%  {margin-left: 0vw;}
+    50%  {margin-left: 12vw;}
+    75%  {margin-left: 20vw;}
+    100% {margin-left: 12vw;}
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(359deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

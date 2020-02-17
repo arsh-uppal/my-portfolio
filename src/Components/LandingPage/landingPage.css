@@ -62,7 +62,7 @@
     margin-top: 100px;
     margin-left: 65%;
     animation-name: mountainDrop;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     
 }
@@ -72,7 +72,7 @@
     margin-top: 50px;
     /* margin-left: 5%; */
     animation-name: mountainDrop;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: linear;
 }
 
@@ -81,7 +81,7 @@
     margin-left: -60%;
     margin-top: 100px;
     animation-name: mountainDrop;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: linear;
 }
 
