@@ -100,8 +100,8 @@ export default function LandingPage() {
                     marginLeft:60, zIndex:4, filter: "contrast(100%)",
                     }}/>
                     <img src={require("../../images/tree.png")} alt="tree"
-                    style={{height:40, width:30, position:"absolute", marginTop:65,
-                    marginLeft:-40, zIndex:4, filter: "contrast(100%)",
+                    style={{height:40, width:30, position:"absolute", marginTop:60,
+                    marginLeft:-32, zIndex:4, filter: "contrast(100%)",
                     }}/>
                     {/* Right mountain */}
                     <img src={require("../../images/panel.png")} alt="direction"
