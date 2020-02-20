@@ -26,11 +26,11 @@ export default function NavBar() {
           <Link to="/" className="linkStyle">
             About
           </Link>
-          <Link to="/" onClick={preventDefault} className="linkStyle">
-            Skills
-          </Link>
-          <Link to="/" onClick={preventDefault} className="linkStyle">
+          <Link to="/experience" className="linkStyle">
             Experience
+          </Link>
+          <Link to="/contact" className="linkStyle">
+            Contact
           </Link>
       </Typography>
     </div>

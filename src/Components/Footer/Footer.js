@@ -7,12 +7,18 @@ export default function Footer() {
         <div className="footerContainer">
             <div className="socialContainer">
                 <div className="socialImages">
-                    <img src={require("../../images/instagram.png")} alt="insta"
-                    />
-                    <img src={require("../../images/github.png")} alt="git" className="imgFollow"
-                    />
-                    <img src={require("../../images/linkedin.png")} alt="linkedin" className="imgFollow"
-                    />
+                    <a href="https://www.instagram.com/im.__arsh/" target="_blank">
+                        <img src={require("../../images/instagram.png")} alt="insta"
+                        />
+                    </a>
+                    <a href="https://github.com/Singh-Arshdeep" target="_blank">
+                        <img src={require("../../images/github.png")} alt="git" className="imgFollow"
+                        />
+                    </a>
+                    <a href="https://www.linkedin.com/in/arshdeep-singh-uppal/" target="_blank">
+                        <img src={require("../../images/linkedin.png")} alt="linkedin" className="imgFollow"
+                        />
+                    </a>
                 </div>
             </div>
         </div>
