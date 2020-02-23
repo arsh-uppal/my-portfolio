@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
 export default function NavBar() {
   const classes = useStyles();
 
-  const preventDefault = event => event.preventDefault();
+  //const preventDefault = event => event.preventDefault();
 
   return (
     <div className={classes.navPos}>

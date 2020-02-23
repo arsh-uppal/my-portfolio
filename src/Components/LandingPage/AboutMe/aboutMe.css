@@ -39,6 +39,17 @@
         font-size: 16px;
     }
 }
+
+.mainAboutMe {
+    padding: 50px 50px 0px 50px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .mainAboutMe {
+        padding: 50px 20px 0px 20px; 
+    }
+}
+
 /***********************************************************/
 /* About section */
 /***********************************************************/
@@ -68,7 +79,7 @@
 
 @media only screen and (max-width: 600px) {
     .innerDivfrondEndInfo {
-        width: 95%;
+        width: 90%;
         left: 0;
     }
 }
@@ -159,8 +170,8 @@
 
 @media only screen and (max-width: 600px) {
     .innerDivbackEndInfo {
-        width: 95%;
-        left: 0;
+        width: 90%;
+        right: 0;
     }
 }
 

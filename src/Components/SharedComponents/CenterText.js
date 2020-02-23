@@ -17,7 +17,7 @@ export default function CenterText() {
                     } else {
                         countWord = 0;
                     }
-                }, 4001
+                }, 4010
             );
 
             return () => {

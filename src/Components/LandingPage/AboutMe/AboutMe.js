@@ -119,9 +119,9 @@ export default function AboutMe() {
                         <div>
                             <img src={require("../../../images/myLogo.png")} alt="logo" className="imgAboutMe" />
                         </div>
-                        <div style={{ padding: "50px 50px 0px 50px" }}>
+                        <div className="mainAboutMe">
                             <span className="textAboutMe">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis porttitor est, rutrum pharetra dui. Curabitur et lacus luctus, euismod dui at, tempus dolor.
+                                Hi, I am a full stack web developer. I’m always interested in hearing from former colleagues, managers, or just interesting creative folks, so feel free to contact.
                             </span>
                             <hr />
                         </div>
@@ -135,7 +135,7 @@ export default function AboutMe() {
                         <div className="textfrondEndInfo">
                             <span className="textAboutMe">
                                 <h2>Design which matters.</h2>
-                                I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.
+                                A website should speak for itself. I can help you create complex webapps using frameworks such as React, Angular, etc.
                         </span>
                         </div>
                     </div>
@@ -172,7 +172,8 @@ export default function AboutMe() {
                         <div className="textbackEndInfo">
                             <span className="textAboutMe">
                                 <h2>A Robust Back End</h2>
-                                I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.
+                                A great application needs an even greater backend. I can help you
+                                create a sturdy and efficient backend in Java and SPRING boot.
                         </span>
                         </div>
                     </div>
