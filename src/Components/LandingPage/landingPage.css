@@ -34,8 +34,9 @@
 .bottom {
     height: 300px;
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
+    position: relative;
     background-color: #e0ebe8;
 }
 
