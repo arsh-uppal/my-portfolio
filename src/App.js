@@ -2,9 +2,9 @@ import React from 'react';
 import LandingPage from './Components/LandingPage/LandingPage';
 import Nav from './Components/NavBar/Nav';
 import Experience from './Components/Experience/Experience';
-import Contact from './Components/Contact/Contact';
+import Playground from './Components/Playground/Playground';
 import './App.css';
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 /********Material imports********/
@@ -46,7 +46,8 @@ function App() {
       </div>
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/experience" component={Experience} />
-      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/playground" component={Playground} />
+      <Redirect to='/' />
     </Router>
   );
 }

@@ -29,8 +29,8 @@ export default function NavBar() {
           <Link to="/experience" className="linkStyle">
             Experience
           </Link>
-          <Link to="/contact" className="linkStyle">
-            Contact
+          <Link to="/playground" className="linkStyle">
+            Playground
           </Link>
       </Typography>
     </div>
