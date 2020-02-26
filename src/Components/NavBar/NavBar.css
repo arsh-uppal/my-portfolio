@@ -8,7 +8,7 @@
 
   @media only screen and (max-width: 600px) {
     .linkStyle {
-        padding-right: 8vw;
+        padding-right: 10vw;
         font-size: 1.3em;
         font-weight: 600;
     }

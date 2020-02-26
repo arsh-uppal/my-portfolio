@@ -9,7 +9,6 @@
 
 .experienceContainer {
     background-color:hsl(164, 22%, 90%);
-    font-family: Helvetica, sans-serif;
     height: auto;
     width: 100%;
     color:rgb(50, 138, 118);
@@ -116,6 +115,7 @@
     background-color: white;
     position: relative;
     border-radius: 6px;
+    box-shadow: 6px 7px 10px grey;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -160,4 +160,44 @@
 .mySkilsContainer {
     background-color: white;
     height: auto;
+    padding:50px;
+    
+}
+
+
+.mySkilGrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chipStyle
+ {
+    background-color: hsl(164, 22%, 90%) !important; 
+    color: rgb(103, 158, 145) !important;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    font-size: 1.1em !important;
+    padding: 2% !important;
+    margin: 20px !important;
+    margin-right: 50px !important;
+    min-width: 100px !important;
+    font-weight: 600 !important;
+    
+    box-shadow: 3px 3px 5px grey !important;
+}
+
+
+@media screen and (max-width: 600px) {
+    .chipStyle
+    {
+        margin-right: 20px !important;
+        font-size: 1em !important;
+        height: 42px !important;
+
+    }
+
+    .mySkilsContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

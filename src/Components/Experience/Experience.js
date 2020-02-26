@@ -1,13 +1,14 @@
 import React from 'react';
 import './experience.css';
 import ExperienceCard from './ExperienceCard';
-import ChildFriendlyIcon from '@material-ui/icons/ChildFriendly';
+import ChildFriendlyTwoToneIcon from '@material-ui/icons/ChildFriendlyTwoTone';
 import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
 import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
 import FlightTakeoffTwoToneIcon from '@material-ui/icons/FlightTakeoffTwoTone';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import Footer from '../Footer/Footer';
 import Grid from '@material-ui/core/Grid';
+import Chip from '@material-ui/core/Chip';
 
 export default function Experience() {
     return (
@@ -57,15 +58,90 @@ export default function Experience() {
                         <ExperienceCard
                             cardPosition={"container left"}
                             title={"An awesmoe baby is born"}
-                            icon={<ChildFriendlyIcon className="cardIcon" style={{ color: "skyblue" }} />}
+                            icon={<ChildFriendlyTwoToneIcon className="cardIcon" style={{ color: "deepskyblue" }} />}
                             year={"1992"}
                             content={"Born on 17-Nov-1992"}
                         />
                     </div>
                 </div>
+                <div style={{ height: 100 }}></div>
             </div>
             <div className="mySkilsContainer">
-                <Grid item xs={12}>
+                <Grid item xs={12} className="mySkilGrid">
+                    <Chip
+                        label="React"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+
+                    <Chip
+                        label="JS"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="Angular"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="Java"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="Spring"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="MySQL"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="Oracle"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="C/C++"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="PHP"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="REST"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="GIT"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+                    <Chip
+                        label="Jira"
+                        color="primary"
+                        className="chipStyle"
+                        clickable
+                    />
+
                 </Grid>
             </div>
             <Grid item xs={12} className="footer">

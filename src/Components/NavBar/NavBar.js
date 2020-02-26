@@ -8,9 +8,9 @@ import './NavBar.css';
 const useStyles = makeStyles(theme => ({
   navPos : {
     paddingTop: 50,
-    marginLeft: "22vw",
+    marginLeft: "24vw",
     [theme.breakpoints.down('xs')]: {
-      marginLeft: "5vw",
+      marginLeft: "6vw",
     },
   },
 }));
@@ -27,10 +27,10 @@ export default function NavBar() {
             About
           </Link>
           <Link to="/experience" className="linkStyle">
-            Experience
+            More
           </Link>
           <Link to="/playground" className="linkStyle">
-            Playground
+            Play
           </Link>
       </Typography>
     </div>
