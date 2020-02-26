@@ -4,13 +4,26 @@ import Nav from './Components/NavBar/Nav';
 import Experience from './Components/Experience/Experience';
 import Playground from './Components/Playground/Playground';
 import './App.css';
-import { Link, Redirect } from 'react-router-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 
 /********Material imports********/
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Hidden } from '@material-ui/core';
+
+// Google Analytics
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
+ReactGA.initialize('UA-159124553-1');
+
+const history = createBrowserHistory();
+
+// Initialize google analytics page view tracking
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,7 +42,7 @@ const useStyles = makeStyles(theme => ({
 function App() {
   const classes = useStyles();
   return (
-    <Router>
+    <Router history={history}>
       <div className={classes.root}>
         <Grid container spacing={0}>
           <Hidden xsDown>
