@@ -15,7 +15,7 @@ import { Hidden } from '@material-ui/core';
 // Google Analytics
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
-ReactGA.initialize('UA-159124553-1');
+ReactGA.initialize(process.env.REACT_APP_GA_KEY);
 
 const history = createBrowserHistory();
 
