@@ -12,7 +12,6 @@
     height: auto;
     width: 100%;
     color:rgb(50, 138, 118);
-    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -118,6 +117,10 @@
     box-shadow: 6px 7px 10px grey;
 }
 
+.content p {
+    font-weight: 600;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
@@ -173,16 +176,14 @@
 
 .chipStyle
  {
-    background-color: hsl(164, 22%, 90%) !important; 
+    background-color: hsl(0, 0%, 93%) !important; 
     color: rgb(103, 158, 145) !important;
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
     font-size: 1.1em !important;
     padding: 2% !important;
     margin: 20px !important;
     margin-right: 50px !important;
     min-width: 100px !important;
     font-weight: 600 !important;
-    
     /* box-shadow: 3px 3px 5px grey !important; */
 }
 
