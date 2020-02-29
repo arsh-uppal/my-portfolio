@@ -136,7 +136,7 @@ export default function LandingPage() {
                 <Grid item xs={12} className="secondTop">
                     <AboutMe />
                 </Grid>
-                <Grid item xs={12} className="footer">
+                <Grid item xs={12} className="footer" style={{marginTop:20}}>
                     <Footer />
                 </Grid>
             </Grid>

@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('xs')]: {
             order: 1,
             height: 200,
-            marginTop: 40,
+            marginTop: 10,
         },
         //backgroundColor: "yellow",
         height: 300,
@@ -49,6 +49,7 @@ const useStyles = makeStyles(theme => ({
         order: 3,
         [theme.breakpoints.down('xs')]: {
             height: 200,
+            marginTop: 12,
         },
         //backgroundColor: "pink",
         height: 300,
@@ -121,7 +122,7 @@ export default function AboutMe() {
                         </div>
                         <div className="mainAboutMe">
                             <span className="textAboutMe">
-                                Hi, I am a full stack web developer. I’m always interested in hearing from former colleagues, managers, or just interesting creative folks, so feel free to contact.
+                                Hi, I am Arsh. I’m always interested in hearing from former colleagues, managers, or just interesting creative folks, so feel free to contact.
                             </span>
                             <hr />
                         </div>
