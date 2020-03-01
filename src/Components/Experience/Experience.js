@@ -15,7 +15,7 @@ export default function Experience() {
         <div>
             <div className="timelineContainer">
                 <div className="experienceContainer">
-                    <div style={{ height: 100 }}></div>
+                    <div style={{ height: 80 }}></div>
                     <div className="timeline">
                         <ExperienceCard
                             cardPosition={"container right"}

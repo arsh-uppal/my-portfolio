@@ -57,6 +57,17 @@ export default function LandingPage() {
 
     return (
         <div className={classes.root}>
+            <div>
+                <div className="bird-container bird-container--one">
+                    <div className="bird bird--one"></div>
+                </div>
+                <div className="bird-container bird-container--three">
+                    <div className="bird bird--three"></div>
+                </div>
+                <div className="bird-container bird-container--four">
+                    <div className="bird bird--four"></div>
+                </div>
+            </div>
             <Grid container spacing={0}>
                 <Hidden xsDown>
                     <Grid item xs={12} sm={3} className={classes.midLeft}>
@@ -136,10 +147,10 @@ export default function LandingPage() {
                 <Grid item xs={12} className="secondTop">
                     <AboutMe />
                 </Grid>
-                <Grid item xs={12} className="footer" style={{marginTop:20}}>
+                <Grid item xs={12} className="footer" style={{ marginTop: 20 }}>
                     <Footer />
                 </Grid>
             </Grid>
-        </div>
+        </div >
     );
 }
