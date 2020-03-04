@@ -15,7 +15,11 @@ export default function Playground() {
 
     return(
         <div>
-      <animated.h1 style={multiAnimation}>Coming soon..</animated.h1>
+            <animated.h1 style={multiAnimation}>Coming soon..</animated.h1>
+            <svg width="200" height="200">
+                <circle cx="90" cy="90" r="80" stroke="green" stroke-width="4" fill="yellow" />
+                Sorry, your browser does not support inline SVG.
+            </svg> 
         </div>
     );
 }
