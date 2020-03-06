@@ -23,7 +23,7 @@ export default function Experience() {
                             icon={<WorkTwoToneIcon className="cardIcon"
                                 style={{ color: "teal" }} />}
                             year={"2019 - present"}
-                            content={"I am currently working par-time at C3D as a software develper."}
+                            content={"I am currently working par-time at C3D as a software developer."}
                         />
 
                         <ExperienceCard
@@ -57,7 +57,7 @@ export default function Experience() {
                         />
                         <ExperienceCard
                             cardPosition={"container left"}
-                            title={"An awesmoe baby is born"}
+                            title={"An awesome baby is born"}
                             icon={<ChildFriendlyTwoToneIcon className="cardIcon" style={{ color: "deepskyblue" }} />}
                             year={"1992"}
                             content={"Born on 17-Nov-1992"}

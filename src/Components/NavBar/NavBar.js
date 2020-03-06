@@ -8,7 +8,7 @@ import './NavBar.css';
 const useStyles = makeStyles(theme => ({
   navPos : {
     paddingTop: 50,
-    marginLeft: "24vw",
+    marginLeft: "25vw",
     [theme.breakpoints.down('xs')]: {
       marginLeft: "6vw",
     },

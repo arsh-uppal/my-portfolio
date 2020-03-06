@@ -1,25 +1,44 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import Collapsible from './Collapsible';
+import Footer from '../Footer/Footer';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme => ({
+    root: {
+        flexGrow: 1
+    },
+}));
 
 export default function Playground() {
 
-    const multiAnimation = useSpring({
-        from: { opacity: 0, color: 'red' },
-        to: [
-            { opacity: 1, color: '#ffaaee' },
-            { opacity: 1, color: 'red' },
-            { opacity: .5, color: '#008000' },
-            { opacity: .8, color: 'black' }
-        ]
-    });
+    const style = {
+        backgroundColor:'hsl(164, 22%, 90%)',
+        height:80,
+    }
 
-    return(
-        <div>
-            <animated.h1 style={multiAnimation}>Coming soon..</animated.h1>
-            <svg width="200" height="200">
-                <circle cx="90" cy="90" r="80" stroke="green" stroke-width="4" fill="yellow" />
-                Sorry, your browser does not support inline SVG.
-            </svg> 
+    const classes = useStyles();
+
+    return (
+        <div style={{backgroundColor:'hsl(164, 22%, 90%)',}} >
+            <div style={style}>
+            </div>
+            <Collapsible collapsibleName="first" collapsedStatus={true}>
+                    <Grid item xs={12}  style={{backgroundColor:'hsl(164, 22%, 90%)',height:100}}>
+                        Yo
+                    </Grid>
+                    <Grid item xs={12}  style={{backgroundColor:'hsl(164, 22%, 90%)',height:100}}>
+                        Yo
+                    </Grid>
+                    <Grid item xs={12}  style={{backgroundColor:'hsl(164, 22%, 90%)',height:100}}>
+                        Yo
+                    </Grid>
+                
+            </Collapsible>
+            
+            <Grid item xs={12} className="footer">
+                <Footer />
+            </Grid>
         </div>
     );
 }
