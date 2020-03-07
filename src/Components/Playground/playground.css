@@ -1,0 +1,48 @@
+
+.square {
+    width: 50%;
+    height: 100%;
+    background-color: #0379ff;
+    line-height: 10em;
+    text-align: center;
+    color: #FFF;
+}
+
+.square.x-axis {
+    animation: x-axis-animation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes x-axis-animation {
+    from {
+        transform: translateX(100%)
+    }
+    to {
+        transform: translateX(0em)
+    }
+}
+
+.square.y-axis {
+    animation: y-axis-animation 1s ease-in-out 0s infinite alternate;
+}
+
+.square.z-axis {
+    animation: z-axis-animation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes y-axis-animation {
+    from {
+        transform: translateY(2em)
+    }
+    to {
+        transform: translateY(-2em)
+    }
+}
+
+@keyframes z-axis-animation {
+    from {
+        transform: translateZ(2em)
+    }
+    to {
+        transform: translateZ(-2em)
+    }
+}
