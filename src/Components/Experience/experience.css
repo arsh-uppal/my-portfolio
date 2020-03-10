@@ -3,12 +3,12 @@
 }
 
 .timelineContainer {
-    background-color:hsl(164, 22%, 90%);
+    background-color:#f1f1f1;
     height: 100%;
 }
 
 .experienceContainer {
-    background-color:hsl(164, 22%, 90%);
+    background-color:#f1f1f1;
     height: auto;
     width: 100%;
     color:rgb(50, 138, 118);
@@ -179,7 +179,7 @@
 
 .chipStyle
  {
-    background-color: hsl(0, 0%, 93%) !important; 
+    background-color: #f1f1f1 !important; 
     color: rgb(103, 158, 145) !important;
     font-size: 1.1em !important;
     padding: 2% !important;

@@ -1,11 +1,14 @@
 
 .square {
-    width: 50%;
+    width: 60%;
     height: 100%;
-    background-color: #0379ff;
+    background-color: #45b29a;
     line-height: 10em;
     text-align: center;
     color: #FFF;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .square.x-axis {
@@ -14,35 +17,37 @@
 
 @keyframes x-axis-animation {
     from {
-        transform: translateX(100%)
+        transform: translateX(35%)
     }
     to {
-        transform: translateX(0em)
+        transform: translateX(-35%)
     }
 }
 
 .square.y-axis {
-    animation: y-axis-animation 1s ease-in-out 0s infinite alternate;
+    animation: y-axis-animation 0.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes y-axis-animation {
+    from {
+        transform: translateY(1.3em)
+    }
+    to {
+        transform: translateY(-1.3em)
+    }
 }
 
 .square.z-axis {
     animation: z-axis-animation 1s ease-in-out 0s infinite alternate;
 }
 
-@keyframes y-axis-animation {
-    from {
-        transform: translateY(2em)
-    }
-    to {
-        transform: translateY(-2em)
-    }
-}
+
 
 @keyframes z-axis-animation {
     from {
-        transform: translateZ(2em)
+        transform: translateZ(1.5em)
     }
     to {
-        transform: translateZ(-2em)
+        transform: translateZ(-1.5em)
     }
 }

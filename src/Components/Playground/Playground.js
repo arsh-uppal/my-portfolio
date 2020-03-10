@@ -9,7 +9,7 @@ import './playground.css';
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1
-    },
+     },
     gridItemDiv: {
         height: '100%',
         width: '100%'
@@ -19,14 +19,14 @@ const useStyles = makeStyles(theme => ({
 export default function Playground() {
 
     const style = {
-        backgroundColor: 'hsl(164, 22%, 90%)',
+        backgroundColor: '#f1f1f1',
         height: 80,
     }
 
     const classes = useStyles();
 
     return (
-        <div style={{ backgroundColor: 'hsl(164, 22%, 90%)', }} >
+        <div style={{ backgroundColor: '#f1f1f1', }} >
             <div style={style}>
             </div>
             <div>

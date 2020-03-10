@@ -34,19 +34,19 @@ const useStyles = makeStyles(theme => ({
     },
     midLeft: {
         height: "55vh",
-        backgroundColor: "#e0ebe8",
+        backgroundColor: "#f1f1f1",
         textAlign: "center",
         position: "relative",
     },
     midCentre: {
         height: "55vh",
-        backgroundColor: "#e0ebe8",
+        backgroundColor: "#f1f1f1",
         textAlign: "center",
         position: "relative",
     },
     midRight: {
         height: "55vh",
-        backgroundColor: "#e0ebe8",
+        backgroundColor: "#f1f1f1",
         textAlign: "center",
         position: "relative",
     },

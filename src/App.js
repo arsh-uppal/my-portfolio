@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   },
   nav: {
     height: "120px",
-    backgroundColor: "#e0ebe8",
+    backgroundColor: "#f1f1f1",
     [theme.breakpoints.down('xs')]: {
       height: "80px",
       width:  "100vw"

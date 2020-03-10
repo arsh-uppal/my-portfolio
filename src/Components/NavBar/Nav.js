@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
         height: "120px",
         width:"67vw",
         opacity: "0.9",
-        backgroundColor: "#e0ebe8",
+        backgroundColor: "#f1f1f1",
         boxShadow:"none",
         [theme.breakpoints.down('xs')]: {
             height: "80px",

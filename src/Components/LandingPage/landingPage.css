@@ -6,7 +6,7 @@
 
 .topLogo {
     height: 120px;
-    background-color: #e0ebe8;
+    background-color: #f1f1f1;
 }
 
 .cloudLeft {
@@ -41,7 +41,7 @@
     width: 100%;
     justify-content: center;
     position: relative;
-    background-color: #e0ebe8;
+    background-color: #f1f1f1;
 }
 
 .secondTop {
@@ -56,7 +56,7 @@
 
 .footer {
     height: 120px;
-    background-color: #e0ebe8;
+    background-color: #f1f1f1;
 }
 
 /***************************/
@@ -103,9 +103,7 @@
 }
 
 /***************************/
-
 /*********Center text*********/
-
 /***************************/
 
 .centerPiece {
@@ -113,10 +111,16 @@
     height: 150px;
     position: absolute;
     margin: auto;
-    top: 75px;
+    top: 20px;
     left: -12px;
     right: 0;
     bottom: 0;
+}
+
+.centerPiece p {
+    color: rgb(50, 138, 118);
+    font-size: 1.8em; 
+    letter-spacing: .15em;
 }
 
 .typewriter p {
@@ -158,10 +162,37 @@
     }
 }
 
+.cursor {
+    display: inline-block;
+    position: relative;
+}
+
+.cursor::after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    right: -4px;
+    top: -3px;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(69, 178, 154);
+    animation: cursor-animation 1s step-end infinite;
+}
+
+@keyframes cursor-animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /***************************/
-
 /*********Flying bird*********/
-
 /***************************/
 
 .bird {
@@ -224,7 +255,7 @@
     -webkit-animation-duration: 15s;
     animation-duration: 15s;
     -webkit-animation-delay: 0;
-    animation-delay: 0;
+    animation-delay: 3.5s;
     z-index: 10;
 }
 
@@ -252,21 +283,16 @@
     z-index: 10;
 }
 
-
 @media only screen and (max-width: 600px) {
-
     .bird-container--one {
         animation-duration: 8s;
     }
-    
     .bird-container--two {
         animation-duration: 9s;
     }
-    
     .bird-container--three {
         animation-duration: 8.6s;
     }
-    
     .bird-container--four {
         animation-duration: 11s;
     }
@@ -277,7 +303,6 @@
         background-position: -900px 0;
     }
 }
-
 
 @keyframes fly-right-one {
     0% {
@@ -342,4 +367,3 @@
         transform: translateY(0vh) scale(0.6);
     }
 }
-
