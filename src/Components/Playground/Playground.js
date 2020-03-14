@@ -30,26 +30,34 @@ export default function Playground() {
             <div style={style}>
             </div>
             <div>
-                <Collapsible collapsibleName="3D Transforms" collapsedStatus={true} style={{border:'solid'}}>
+                <Collapsible collapsibleName="Animations - 3D Transforms" collapsedStatus={true} style={{border:'solid'}}>
                     <Grid container spacing={5} style={{}}>
                         <Grid item sm={4} xs={12} >
                             <div className={classes.gridItemDiv}>
-                                <Paper elevation={3} >
-                                        <div class="square x-axis">x-axis</div>
+                                <Paper elevation={3}>
+                                        <div className="square x-axis">
+                                            <div className="x-axis-text">x-axis</div>
+                                        </div>
                                 </Paper>
                             </div>
                         </Grid>
-                        <Grid item sm={4} xs={12}>
-                            <div className={classes.gridItemDiv}>
-                                <Paper elevation={3} >
-                                    <div class="square y-axis">y-axis</div>   
-                                </Paper>
-                            </div>
-                        </Grid>
+                        
                         <Grid item sm={4} xs={12}>
                             <div className={classes.gridItemDiv}>
                                 <Paper elevation={3} style={{perspective: "10em"}}>
-                                    <div class="square z-axis">z-axis</div>    
+                                    <div className="square z-axis" style={{perspective: "10em"}}>
+                                        <div className="z-axis-text">z-axis</div>
+                                    </div>    
+                                </Paper>
+                            </div>
+                        </Grid>
+
+                        <Grid item sm={4} xs={12}>
+                            <div className={classes.gridItemDiv}>
+                                <Paper elevation={3} >
+                                    <div className="square y-axis">
+                                        <div className="y-axis-text">y-axis</div>
+                                    </div>   
                                 </Paper>
                             </div>
                         </Grid>

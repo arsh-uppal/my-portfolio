@@ -52,6 +52,10 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
+let handleBirdShoot = () => {
+    console.log("hey I am shot");
+}
+
 export default function LandingPage() {
     const classes = useStyles();
 

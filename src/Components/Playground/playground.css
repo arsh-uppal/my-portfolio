@@ -7,12 +7,13 @@
     text-align: center;
     color: #FFF;
     margin: auto;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-shadow: 1px 1px rgb(53, 52, 52);
 }
 
 .square.x-axis {
-    animation: x-axis-animation 1s ease-in-out 0s infinite alternate;
+    animation: x-axis-animation 2s ease-in-out 0s infinite alternate;
 }
 
 @keyframes x-axis-animation {
@@ -24,30 +25,69 @@
     }
 }
 
+.x-axis-text {
+    animation: x-axis-text-animation 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes x-axis-text-animation {
+    from {
+        transform: translateX(-35%)
+    }
+    to {
+        transform: translateX(35%)
+    }
+}
+
 .square.y-axis {
-    animation: y-axis-animation 0.5s ease-in-out 0s infinite alternate;
+    animation: y-axis-animation 0.8s ease-in-out 0s infinite alternate;
 }
 
 @keyframes y-axis-animation {
     from {
-        transform: translateY(1.3em)
+        transform: translateY(0.8em)
     }
     to {
-        transform: translateY(-1.3em)
+        transform: translateY(-0.8em)
+    }
+}
+
+.y-axis-text {
+    animation: y-axis-text-animation 0.8s ease-in-out 0s infinite alternate;
+}
+
+@keyframes y-axis-text-animation {
+    from {
+        transform: translateY(-0.8em)
+    }
+    to {
+        transform: translateY(0.8em)
     }
 }
 
 .square.z-axis {
-    animation: z-axis-animation 1s ease-in-out 0s infinite alternate;
+    animation: z-axis-animation 2s ease-in-out 0s infinite alternate; 
 }
 
 
 
 @keyframes z-axis-animation {
     from {
-        transform: translateZ(1.5em)
+        transform: translateZ(0.8em)
     }
     to {
-        transform: translateZ(-1.5em)
+        transform: translateZ(-0.8em)
+    }
+}
+
+.z-axis-text {
+    animation: z-axis-text-animation 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes z-axis-text-animation {
+    from {
+        transform: translateZ(-0.8em)
+    }
+    to {
+        transform: translateZ(0.8em)
     }
 }
