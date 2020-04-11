@@ -30,23 +30,7 @@ export default function Playground() {
             <div style={style}>
             </div>
             <div>
-                <Collapsible collapsibleName="Taskiton - An app to manage tasks" collapsedStatus={false} style={{border:'solid'}}>  
-                <iframe src="http://taskiton.wmdd.ca/" 
-                height='700' width='100%'></iframe>
-                </Collapsible>
-                <Collapsible collapsibleName="Odyssey - A promotional Website" collapsedStatus={false} style={{border:'solid'}}>  
-                <iframe src="http://odyssey.wmdd.ca/" 
-                height='500' width='100%'></iframe>
-                </Collapsible>
-                <Collapsible collapsibleName="Hotel Booking Web App (Made in 2 days)" collapsedStatus={false} style={{border:'solid'}}>  
-                <iframe src="http://arcresort.arsh.wmdd.ca/" 
-                height='500' width='100%'></iframe>
-                </Collapsible>
-                <Collapsible collapsibleName="Pure Object Oriented Game in JavaScript" collapsedStatus={false} style={{border:'solid'}}>  
-                <iframe src="https://singh-arshdeep.github.io/oop-car-game/" 
-                height='500' width='100%'></iframe>
-                </Collapsible>
-                <Collapsible collapsibleName="Animations - 3D Transforms" collapsedStatus={false} style={{border:'solid'}}>
+                  <Collapsible collapsibleName="Animations - 3D Transforms" collapsedStatus={false} style={{border:'solid'}}>
                     <Grid container spacing={5} style={{}}>
                         <Grid item sm={4} xs={12} >
                             <div className={classes.gridItemDiv}>
