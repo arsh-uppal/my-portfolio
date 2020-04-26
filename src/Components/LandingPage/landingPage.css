@@ -387,31 +387,6 @@
 
 @media only screen and (max-width: 600px) {
     .snowContainer {
-        height: 140vh;
-    }
-}
-
-.confetti {
-    position: absolute;
-    z-index: 5;
-    opacity: 1;
-    margin-top: 102vh;
-}
-
-@media only screen and (max-width: 1200px) {
-    .confetti {
-        position: absolute;
-        z-index: 5;
-        opacity: 1;
-        margin-top: 120vh;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .confetti {
-        position: absolute;
-        z-index: 5;
-        opacity: 1;
-        margin-top: 125vh;
+        height: 100vh;
     }
 }

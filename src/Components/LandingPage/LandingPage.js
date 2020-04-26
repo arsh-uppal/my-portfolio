@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./landingPage.css";
 import Mountain from "../SharedComponents/Mountain";
 import CenterText from "../SharedComponents/CenterText";
@@ -9,9 +9,6 @@ import AboutMe from "../LandingPage/AboutMe/AboutMe";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Hidden } from "@material-ui/core";
-
-/********Confetti imports********/
-import ConfettiGenerator from "confetti-js";
 
 /********Other imports********/
 import Snowfall from "react-snowfall";
@@ -65,21 +62,8 @@ let handleBirdShoot = () => {
 
 export default function LandingPage() {
   const classes = useStyles();
-  useEffect(() => {
-    const confettiSettings = {
-      target: "confetti-canvas",
-      max: 15,
-      clock: 5,
-      rotate: true,
-      height: "1200",
-    };
-    const confetti = new ConfettiGenerator(confettiSettings);
-    confetti.render();
-    return () => confetti.clear();
-  }, []);
   return (
     <div className={classes.root}>
-      <canvas id="confetti-canvas" className="confetti"></canvas>
       <div className="snowContainer">
         <Snowfall color="white" snowflakeCount={50} />
       </div>
