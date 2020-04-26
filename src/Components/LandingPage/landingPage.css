@@ -1,5 +1,7 @@
 /***************************/
+
 /**********Grid*************/
+
 /***************************/
 
 .topLogo {
@@ -58,7 +60,9 @@
 }
 
 /***************************/
+
 /*********Mountains*********/
+
 /***************************/
 
 .firstMountain {
@@ -99,7 +103,9 @@
 }
 
 /***************************/
+
 /*********Center text*********/
+
 /***************************/
 
 .centerPiece {
@@ -115,7 +121,7 @@
 
 .centerPiece p {
     color: rgb(50, 138, 118);
-    font-size: 1.8em; 
+    font-size: 1.8em;
     letter-spacing: .15em;
 }
 
@@ -188,7 +194,9 @@
 }
 
 /***************************/
+
 /*********Flying bird*********/
+
 /***************************/
 
 .bird {
@@ -361,5 +369,49 @@
         display: none;
         -webkit-transform: translateY(0vh) scale(0.6);
         transform: translateY(0vh) scale(0.6);
+    }
+}
+
+.snowContainer {
+    height: 102vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 20;
+}
+
+@media only screen and (max-width: 1000px) {
+    .snowContainer {
+        height: 130vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .snowContainer {
+        height: 140vh;
+    }
+}
+
+.confetti {
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    margin-top: 102vh;
+}
+
+@media only screen and (max-width: 1200px) {
+    .confetti {
+        position: absolute;
+        z-index: 5;
+        opacity: 1;
+        margin-top: 120vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .confetti {
+        position: absolute;
+        z-index: 5;
+        opacity: 1;
+        margin-top: 125vh;
     }
 }
