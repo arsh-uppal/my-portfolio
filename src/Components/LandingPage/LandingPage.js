@@ -12,6 +12,7 @@ import { Hidden } from "@material-ui/core";
 
 /********Confetti imports********/
 import ConfettiGenerator from "confetti-js";
+import Snowfall from "react-snowfall";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,22 +64,32 @@ let handleBirdShoot = () => {
 export default function LandingPage() {
   const classes = useStyles();
   useEffect(() => {
-    const confettiSettings = {
-      target: "confetti-canvas",
-      max: 15,
-      clock: 5,
-      rotate: true,
-    };
-    const confetti = new ConfettiGenerator(confettiSettings);
-    confetti.render();
-    return () => confetti.clear();
+    // const confettiSettings = {
+    //   target: "confetti-canvas",
+    //   max: 15,
+    //   clock: 5,
+    //   rotate: true,
+    // };
+    // const confetti = new ConfettiGenerator(confettiSettings);
+    // confetti.render();
+    // return () => confetti.clear();
   }, []);
   return (
     <div className={classes.root}>
-      <canvas
+      {/* <canvas
         id="confetti-canvas"
         style={{ position: "absolute", zIndex: 1, opacity: "1" }}
-      ></canvas>
+      ></canvas> */}
+      <div
+        style={{
+          height: "100vh",
+          width: "100vw",
+          position: "absolute",
+          zIndex: "2",
+        }}
+      >
+        <Snowfall color="white" snowflakeCount={50} />
+      </div>
       <div>
         <div className="bird-container bird-container--one">
           <div className="bird bird--one"></div>
