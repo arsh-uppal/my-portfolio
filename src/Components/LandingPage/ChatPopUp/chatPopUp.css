@@ -1,0 +1,115 @@
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+.open-button {
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    z-index: 200;
+}
+
+.close-button {
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 80px;
+    width: 280px;
+    z-index: 100;
+}
+
+.send-button {
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    z-index: 200;
+}
+
+/* The popup chat - hidden by default */
+
+.chat-popup {
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 80;
+}
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+}
+
+/* Full-width textarea */
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #ddd;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+
+.form-container textarea:focus {
+    background-color: rgb(240, 203, 203);
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+
+.form-container .btn {
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 0%;
+    background-color: transparent;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .open-button, .send-button {
+        right: 10px;
+        bottom: 10px;
+    }
+    .close-button {
+        right: 1px;
+        bottom: 240px;
+    }
+    .form-container {
+        padding: 0px;
+    }
+    .form-container textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background-color: #ddd;
+        resize: none;
+        min-height: 200px;
+    }
+    .chat-popup {
+        right: 10px;
+    }
+}
