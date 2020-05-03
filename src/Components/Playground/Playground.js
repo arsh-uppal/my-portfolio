@@ -15,10 +15,12 @@ export default function Playground() {
       <div style={style}></div>
       <div>
         <Collapsible
-          collapsibleName="Coming soon"
+          collapsibleName="Some of my work :"
           collapsedStatus={false}
           style={{ border: "solid" }}
-        >...</Collapsible>
+        >
+          ...
+        </Collapsible>
       </div>
       <Grid item xs={12} className="footer">
         <Footer />
