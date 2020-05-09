@@ -3,9 +3,9 @@
 .open-button {
     border: none;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
     position: fixed;
-    bottom: 23px;
+    bottom: 3%;
     right: 28px;
     width: 280px;
     z-index: 200;
@@ -16,7 +16,7 @@
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    bottom: 23px;
+    bottom: 3%;
     right: 80px;
     width: 280px;
     z-index: 100;
@@ -27,7 +27,7 @@
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    bottom: 23px;
+    bottom: 3%;
     right: 28px;
     width: 280px;
     z-index: 200;

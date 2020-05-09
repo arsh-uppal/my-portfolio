@@ -5,6 +5,7 @@ import CenterText from "../SharedComponents/CenterText";
 import Footer from "../Footer/Footer";
 import AboutMe from "../LandingPage/AboutMe/AboutMe";
 import ChatPopUp from "./ChatPopUp/ChatPopUp";
+import QuizPopUp from "./QuizGame/QuizPopUp";
 
 /********Material imports********/
 import { makeStyles } from "@material-ui/core/styles";
@@ -69,6 +70,7 @@ export default function LandingPage() {
         <Snowfall color="white" snowflakeCount={50} />
       </div>
       <ChatPopUp />
+      <QuizPopUp />
       <div>
         <div className="bird-container bird-container--one">
           <div className="bird bird--one"></div>

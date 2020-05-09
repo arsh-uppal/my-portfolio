@@ -1,0 +1,137 @@
+/* Button used to open the quiz form - fixed at the bottom of the page */
+
+.open-button-quiz {
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 3%;
+    left: 28px;
+    width: 280px;
+    z-index: 200;
+    animation: moveAround 1s linear infinite;
+    animation-delay: 5s;
+    animation-iteration-count: 30;
+}
+
+@keyframes moveAround {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(40deg);
+        font-size: small;
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-40deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.close-button-quiz {
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 3%;
+    left: 28px;
+    width: 280px;
+    z-index: 100;
+}
+
+.send-button-quiz {
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 3%;
+    left: 80px;
+    width: 280px;
+    z-index: 200;
+}
+
+/* The popup quiz - hidden by default */
+
+.quiz-popup {
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    z-index: 80;
+}
+
+/* Add styles to the form container */
+
+.form-container-quiz {
+    max-width: 300px;
+    padding: 10px;
+    width: 300px;
+}
+
+/* Full-width quiz-container */
+
+.form-container-quiz .quiz-container {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #dfdede;
+    resize: none;
+    min-height: 300px;
+}
+
+/* When the quiz-container gets focus, do something */
+
+.form-container-quiz .quiz-container:focus {
+    background-color: #cccccc;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+
+.form-container-quiz .btn-quiz {
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 0%;
+    background-color: transparent;
+}
+
+.btn-quiz:focus {
+    outline: none;
+}
+
+/* Add some hover effects to buttons */
+
+.form-container-quiz .btn-quiz:hover, .open-button-quiz:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .open-button-quiz, .send-button-quiz {
+        left: 10px;
+        bottom: 10px;
+    }
+    .close-button-quiz {
+        left: 1px;
+        bottom: 240px;
+    }
+    .form-container-quiz {
+        padding: 0px;
+    }
+    .form-container-quiz .quiz-container {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        resize: none;
+        min-height: 200px;
+    }
+    .quiz-popup {
+        left: 10px;
+    }
+}
