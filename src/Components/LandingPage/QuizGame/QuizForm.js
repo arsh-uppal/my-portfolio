@@ -7,7 +7,7 @@ const QuizForm = (props) => {
     event.preventDefault();
     setTimeout(() => {
       props.toggleQuizForm();
-    }, 3000);
+    }, 4000);
   };
 
   return (
