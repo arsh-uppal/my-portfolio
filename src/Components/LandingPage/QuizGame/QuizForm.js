@@ -1,6 +1,6 @@
 import React from "react";
 import "./quizPopUp.css";
-import SendTwoToneIcon from "@material-ui/icons/SendTwoTone";
+import Quiz from "./Quiz";
 
 const QuizForm = (props) => {
   const handleSubmit = (event) => {
@@ -13,15 +13,10 @@ const QuizForm = (props) => {
   return (
     <div className="quiz-popup" id="myForm">
       <form className="form-container-quiz" onSubmit={handleSubmit}>
-        <div className="quiz-container"></div>
-
-        <button type="submit" className="btn-quiz">
-          <SendTwoToneIcon
-            color="primary"
-            fontSize="large"
-            className="send-button-quiz"
-          />
-        </button>
+        <div className="quiz-container">
+          <Quiz />
+        </div>
+        <button type="submit" className="btn-quiz"></button>
       </form>
     </div>
   );

@@ -10,7 +10,7 @@
     width: 280px;
     z-index: 200;
     animation: moveAround 1s linear infinite;
-    animation-delay: 5s;
+    animation-delay: 3s;
     animation-iteration-count: 30;
 }
 
@@ -75,11 +75,11 @@
 /* Full-width quiz-container */
 
 .form-container-quiz .quiz-container {
-    width: 100%;
+    width: 130%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background-color: #dfdede;
+    background-color: #ececec;
     resize: none;
     min-height: 300px;
 }
@@ -117,8 +117,8 @@
         bottom: 10px;
     }
     .close-button-quiz {
-        left: 1px;
-        bottom: 240px;
+        left: 8px;
+        bottom: 1%
     }
     .form-container-quiz {
         padding: 0px;

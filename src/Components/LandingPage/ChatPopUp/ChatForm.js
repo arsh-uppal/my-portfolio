@@ -27,7 +27,7 @@ const ChatForm = (props) => {
     <div className="chat-popup" id="myForm">
       <form className="form-container" onSubmit={handleSubmit}>
         <textarea
-          placeholder="Send a message...(Do Include your contact info)"
+          placeholder="Send me a message...(Do Include your contact info)"
           name="msg"
           required
         ></textarea>
