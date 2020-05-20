@@ -1,28 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9f98b1e.chunk.css",
-    "main.js": "/static/js/main.e61662e6.chunk.js",
-    "main.js.map": "/static/js/main.e61662e6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e3441cc1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e3441cc1.js.map",
-    "static/js/2.3a97b4aa.chunk.js": "/static/js/2.3a97b4aa.chunk.js",
-    "static/js/2.3a97b4aa.chunk.js.map": "/static/js/2.3a97b4aa.chunk.js.map",
+    "main.css": "/static/css/main.4ea76a7c.chunk.css",
+    "main.js": "/static/js/main.a35cc608.chunk.js",
+    "main.js.map": "/static/js/main.a35cc608.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.55fef487.js",
+    "runtime-main.js.map": "/static/js/runtime-main.55fef487.js.map",
+    "static/js/2.b0a11a55.chunk.js": "/static/js/2.b0a11a55.chunk.js",
+    "static/js/2.b0a11a55.chunk.js.map": "/static/js/2.b0a11a55.chunk.js.map",
+    "static/js/3.facfc1f0.chunk.js": "/static/js/3.facfc1f0.chunk.js",
+    "static/js/3.facfc1f0.chunk.js.map": "/static/js/3.facfc1f0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f0b19cfae79b9cfb7bcf6cefdf700146.js": "/precache-manifest.f0b19cfae79b9cfb7bcf6cefdf700146.js",
+    "precache-manifest.a6135197bbfa2e805978cb960a2de6d0.js": "/precache-manifest.a6135197bbfa2e805978cb960a2de6d0.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b9f98b1e.chunk.css.map": "/static/css/main.b9f98b1e.chunk.css.map",
-    "static/js/2.3a97b4aa.chunk.js.LICENSE": "/static/js/2.3a97b4aa.chunk.js.LICENSE",
+    "static/css/main.4ea76a7c.chunk.css.map": "/static/css/main.4ea76a7c.chunk.css.map",
+    "static/js/2.b0a11a55.chunk.js.LICENSE": "/static/js/2.b0a11a55.chunk.js.LICENSE",
+    "static/js/3.facfc1f0.chunk.js.LICENSE": "/static/js/3.facfc1f0.chunk.js.LICENSE",
     "static/media/landingPage.css": "/static/media/bird-cells.60ff57a9.svg",
     "static/media/cloud.svg": "/static/media/cloud.f086b92c.svg",
+    "static/media/correct-answer.mp3": "/static/media/correct-answer.741286db.mp3",
     "static/media/myLogo.png": "/static/media/myLogo.cb5ce076.png",
     "static/media/panel.png": "/static/media/panel.e705dd7f.png",
     "static/media/tree.png": "/static/media/tree.9ddcfb24.png",
-    "static/media/tree4.png": "/static/media/tree4.3d42ef70.png"
+    "static/media/tree4.png": "/static/media/tree4.3d42ef70.png",
+    "static/media/wrong-answer.mp3": "/static/media/wrong-answer.15f05fe6.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.e3441cc1.js",
-    "static/js/2.3a97b4aa.chunk.js",
-    "static/css/main.b9f98b1e.chunk.css",
-    "static/js/main.e61662e6.chunk.js"
+    "static/js/runtime-main.55fef487.js",
+    "static/js/2.b0a11a55.chunk.js",
+    "static/css/main.4ea76a7c.chunk.css",
+    "static/js/main.a35cc608.chunk.js"
   ]
 }
