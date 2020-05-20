@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import axios from "axios";
+import Skeleton from "@material-ui/lab/Skeleton";
 import QuizOptions from "./QuizOptions";
 
 const useStyles = makeStyles((theme) => ({
@@ -25,21 +27,50 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Quiz() {
+  const [quizQuestion, setQuizQuestion] = useState(false);
+  const [answers, setAnswers] = useState([]);
+  const [correctAnswer, setCorrectAnswer] = useState("");
+  async function fetchQuestion() {
+    const result = await axios(process.env.REACT_APP_TRIVIA_KEY);
+    let question = result.data.results[0].question;
+    question = question.replace(/&quot;/g, '"');
+    setQuizQuestion(question);
+    let _answers = [
+      ...result.data.results[0].incorrect_answers,
+      result.data.results[0].correct_answer,
+    ];
+    _answers.sort(() => Math.random() - 0.5);
+    setAnswers(_answers);
+    setCorrectAnswer(result.data.results[0].correct_answer);
+  }
+  useEffect(() => {
+    fetchQuestion();
+  }, []);
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
-      <div className={classes.section1}>
-        <Typography variant="inherit">
-          Pinstriped cornflower blue cotton blouse takes you on a walk to the
-          park or just down the hall.
-        </Typography>
-      </div>
-      <div className={classes.section2}>
+      {quizQuestion ? (
         <div>
-          <QuizOptions />
+          <div className={classes.section1}>
+            <Typography variant="inherit">
+              <span dangerouslySetInnerHTML={{ __html: quizQuestion }}></span>
+            </Typography>
+          </div>
+          <div className={classes.section2}>
+            <div>
+              <QuizOptions answers={answers} correctAnswer={correctAnswer} />
+            </div>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div>
+          <Skeleton variant="rect" height={118} animation="wave" />
+          <Skeleton variant="text" animation="wave" />
+          <Skeleton variant="text" animation="wave" />
+          <Skeleton variant="text" animation="wave" />
+          <Skeleton variant="text" animation="wave" />
+        </div>
+      )}
     </div>
   );
 }
