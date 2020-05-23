@@ -1,3 +1,5 @@
+// This is my worst written code ever
+// I apologise if you are going through it
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -5,6 +7,9 @@ import ListItem from "@material-ui/core/ListItem";
 import Divider from "@material-ui/core/Divider";
 import CheckCircleTwoToneIcon from "@material-ui/icons/CheckCircleTwoTone";
 import CancelTwoToneIcon from "@material-ui/icons/CancelTwoTone";
+import useSound from "use-sound";
+import correctAnswerSound from "../../../sounds/correct-answer.mp3";
+import wrongAnswerSound from "../../../sounds/wrong-answer.mp3";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,31 +36,66 @@ export default function QuizOptions(props) {
     third: false,
     fourth: false,
   });
-
+  const [_correctAnswerSound] = useSound(correctAnswerSound);
+  const [_wrongAnswerSound] = useSound(wrongAnswerSound);
   const handleClick = (selectedOption, btnNum) => {
     if (props.correctAnswer === selectedOption) {
+      _correctAnswerSound();
       setOptionsCorrectObj((prevState) => {
         return {
           ...prevState,
           [btnNum]: true,
         };
       });
+      setTimeout(() => {
+        props.fetchQuestion();
+        removeMarkers();
+      }, 1000);
     } else {
+      _wrongAnswerSound();
       setOptionsWrongObj((prevState) => {
         return {
           ...prevState,
           [btnNum]: true,
         };
       });
+      let updateRight = "";
+      if (props.answers.indexOf(props.correctAnswer) === 0) {
+        updateRight = "first";
+      } else if (props.answers.indexOf(props.correctAnswer) === 1) {
+        updateRight = "second";
+      } else if (props.answers.indexOf(props.correctAnswer) === 2) {
+        updateRight = "third";
+      } else if (props.answers.indexOf(props.correctAnswer) === 3) {
+        updateRight = "fourth";
+      }
       setTimeout(() => {
         setOptionsCorrectObj((prevState) => {
           return {
             ...prevState,
-            [btnNum]: true,
+            [updateRight]: true,
           };
         });
+      }, 1000);
+      setTimeout(() => {
+        props.fetchQuestion();
+        removeMarkers();
       }, 2000);
     }
+  };
+  const removeMarkers = () => {
+    setOptionsCorrectObj({
+      first: false,
+      second: false,
+      third: false,
+      fourth: false,
+    });
+    setOptionsWrongObj({
+      first: false,
+      second: false,
+      third: false,
+      fourth: false,
+    });
   };
   return (
     <List component="nav" className={classes.root} aria-label="mailbox folders">

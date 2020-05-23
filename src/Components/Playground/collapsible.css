@@ -1,18 +1,13 @@
-.collapsible {
-
-}
+.collapsible {}
 
 .collapsibleHeader {
-    text-align: center;
-    width: 100%;
-    color:rgb(50, 138, 118);
-    font-size: 1.2em;
-    font-weight: 600;
-  }
+  text-align: center;
+  width: 100%;
+  color: rgb(50, 138, 118);
+  font-size: 1.2em;
+  font-weight: 600;
+}
 
-.collapsibleHeader:hover {
-}
-  
-.collapsibleContent {
-}
- 
+.collapsibleHeader:hover {}
+
+.collapsibleContent {}

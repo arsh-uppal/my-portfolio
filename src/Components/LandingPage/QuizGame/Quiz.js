@@ -58,7 +58,11 @@ export default function Quiz() {
           </div>
           <div className={classes.section2}>
             <div>
-              <QuizOptions answers={answers} correctAnswer={correctAnswer} />
+              <QuizOptions
+                answers={answers}
+                correctAnswer={correctAnswer}
+                fetchQuestion={fetchQuestion}
+              />
             </div>
           </div>
         </div>
