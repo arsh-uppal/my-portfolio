@@ -1,0 +1,60 @@
+/* Man on the cycle */
+
+.mainDivSvg {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: none;
+    height: 400px;
+    width: 100%;
+}
+
+.containerSvg {
+    width: 100%;
+}
+
+#leftWheel, #rightWheel {
+    animation: wheel 2s infinite linear;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    transform: translate(100px, 100px);
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#bike {
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes bike {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(25deg);
+    }
+}
+
+#hat {
+    animation: hat 1s ease-in-out infinite alternate;
+}
+
+@keyframes hat {
+    from {
+        transform: translateY(-0.5%);
+    }
+    to {
+        transform: translateY(5%);
+    }
+}

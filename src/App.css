@@ -1,41 +1,54 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
+
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE and Edge */
+
 body {
-    -ms-overflow-style: none;
-    width: 100%;
+  -ms-overflow-style: none;
+  width: 100%;
+  color: rgb(50, 138, 118);
 }
 
 .logo {
-    width: 100px;
-    height: 95px;
-    margin-left: 13vw;
-    margin-top: 23px;
-    z-index:5;
-    animation-name:  logoLoad, rotation;
-    animation-duration: 3s;
-    animation-timing-function: linear;
+  width: 100px;
+  height: 95px;
+  margin-left: 13vw;
+  margin-top: 23px;
+  z-index: 5;
+  animation-name: logoLoad, rotation;
+  animation-duration: 3s;
+  animation-timing-function: linear;
 }
 
 @keyframes logoLoad {
-    0%   {margin-left: -13vw;}
-    25%  {margin-left: 0vw;}
-    50%  {margin-left: 13vw;}
-    75%  {margin-left: 24vw;}
-    100% {margin-left: 13vw;}
+  0% {
+    margin-left: -13vw;
+  }
+  25% {
+    margin-left: 0vw;
+  }
+  50% {
+    margin-left: 13vw;
+  }
+  75% {
+    margin-left: 24vw;
+  }
+  100% {
+    margin-left: 13vw;
+  }
 }
 
 @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    75% {
-      transform: rotate(359deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
+  75% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

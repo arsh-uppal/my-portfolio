@@ -4,8 +4,9 @@ import Nav from "./Components/NavBar/Nav";
 import Experience from "./Components/Experience/Experience";
 import Playground from "./Components/Playground/Playground";
 import "./App.css";
-import { Link, Redirect } from "react-router-dom";
-import { Router, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 /********Material imports********/
 import { makeStyles } from "@material-ui/core/styles";
@@ -42,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const classes = useStyles();
   return (
-    <Router history={history}>
+    <HashRouter>
       <div className={classes.root}>
         <Grid container spacing={0}>
           <Hidden xsDown>
@@ -64,8 +65,7 @@ function App() {
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/experience" component={Experience} />
       <Route exact path="/playground" component={Playground} />
-      <Redirect to="/" />
-    </Router>
+    </HashRouter>
   );
 }
 

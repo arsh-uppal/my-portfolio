@@ -3,15 +3,15 @@
 }
 
 .timelineContainer {
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
     height: 100%;
 }
 
 .experienceContainer {
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
     height: auto;
     width: 100%;
-    color:rgb(50, 138, 118);
+    color: rgb(50, 138, 118);
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -114,7 +114,7 @@
     background-color: white;
     position: relative;
     border-radius: 6px;
-    box-shadow: 6px 7px 10px grey;
+    box-shadow: 1px 2px 4px grey;
 }
 
 .content p {
@@ -166,10 +166,8 @@
 .mySkilsContainer {
     background-color: white;
     height: auto;
-    padding:50px;
-    
+    padding: 50px;
 }
-
 
 .mySkilGrid {
     display: flex;
@@ -177,9 +175,8 @@
     flex-wrap: wrap;
 }
 
-.chipStyle
- {
-    background-color: #f1f1f1 !important; 
+.chipStyle {
+    background-color: #f1f1f1 !important;
     color: rgb(103, 158, 145) !important;
     font-size: 1.1em !important;
     padding: 2% !important;
@@ -190,16 +187,12 @@
     /* box-shadow: 3px 3px 5px grey !important; */
 }
 
-
 @media screen and (max-width: 600px) {
-    .chipStyle
-    {
+    .chipStyle {
         margin-right: 20px !important;
         font-size: 1em !important;
         height: 42px !important;
-
     }
-
     .mySkilsContainer {
         padding-left: 0;
         padding-right: 0;

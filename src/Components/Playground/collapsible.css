@@ -1,13 +1,7 @@
-.collapsible {}
-
 .collapsibleHeader {
   text-align: center;
   width: 100%;
   color: rgb(50, 138, 118);
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
 }
-
-.collapsibleHeader:hover {}
-
-.collapsibleContent {}
