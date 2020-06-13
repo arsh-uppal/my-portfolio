@@ -15,11 +15,44 @@ export default function Playground() {
       <div style={style}></div>
       <div>
         <Collapsible
-          collapsibleName="Some of my work :"
+          collapsibleName="Taskiton (Some of my work)"
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
-          ...
+          <iframe
+            src="https://www.taskiton.wmdd.ca/#/"
+            title="Taskiton web app"
+            width="100%"
+            height="500"
+          ></iframe>
+        </Collapsible>
+      </div>
+      <div>
+        <Collapsible
+          collapsibleName="Odyssey (Some of my work)"
+          collapsedStatus={false}
+          style={{ border: "solid" }}
+        >
+          <iframe
+            src="https://odyssey.wmdd.ca/"
+            title="Odyssey mobile game"
+            width="100%"
+            height="500"
+          ></iframe>
+        </Collapsible>
+      </div>
+      <div>
+        <Collapsible
+          collapsibleName="Arc resort (Some of my work)"
+          collapsedStatus={false}
+          style={{ border: "solid" }}
+        >
+          <iframe
+            src="https://arcresort.arsh.wmdd.ca/"
+            title="Arc resort website"
+            width="100%"
+            height="500"
+          ></iframe>
         </Collapsible>
       </div>
       <Grid item xs={12} className="footer">

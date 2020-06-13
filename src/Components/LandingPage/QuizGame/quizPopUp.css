@@ -20,7 +20,6 @@
     }
     25% {
         transform: rotate(40deg);
-        font-size: small;
     }
     50% {
         transform: rotate(0deg);
@@ -113,8 +112,8 @@
 
 @media only screen and (max-width: 600px) {
     .open-button-quiz, .send-button-quiz {
-        left: 10px;
-        bottom: 10px;
+        left: 15px;
+        bottom: 15px;
     }
     .close-button-quiz {
         left: 8px;

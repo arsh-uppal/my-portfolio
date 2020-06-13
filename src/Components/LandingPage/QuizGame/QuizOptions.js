@@ -38,7 +38,9 @@ export default function QuizOptions(props) {
   });
   const [_correctAnswerSound] = useSound(correctAnswerSound);
   const [_wrongAnswerSound] = useSound(wrongAnswerSound);
+  const [disableButton, setDisableButton] = useState(false);
   const handleClick = (selectedOption, btnNum) => {
+    setDisableButton(true);
     if (props.correctAnswer === selectedOption) {
       _correctAnswerSound();
       setOptionsCorrectObj((prevState) => {
@@ -50,7 +52,7 @@ export default function QuizOptions(props) {
       setTimeout(() => {
         props.fetchQuestion();
         removeMarkers();
-      }, 1000);
+      }, 3000);
     } else {
       _wrongAnswerSound();
       setOptionsWrongObj((prevState) => {
@@ -80,8 +82,11 @@ export default function QuizOptions(props) {
       setTimeout(() => {
         props.fetchQuestion();
         removeMarkers();
-      }, 2000);
+      }, 3000);
     }
+    setTimeout(() => {
+      setDisableButton(false);
+    }, 3500);
   };
   const removeMarkers = () => {
     setOptionsCorrectObj({
@@ -105,6 +110,7 @@ export default function QuizOptions(props) {
         onClick={() => {
           handleClick(props.answers[0], "first");
         }}
+        disabled={disableButton}
       >
         {props.answers[0]}
         {optionsCorrectObj.first && (
@@ -123,6 +129,7 @@ export default function QuizOptions(props) {
         onClick={() => {
           handleClick(props.answers[1], "second");
         }}
+        disabled={disableButton}
       >
         {props.answers[1]}
         {optionsCorrectObj.second && (
@@ -141,6 +148,7 @@ export default function QuizOptions(props) {
         onClick={() => {
           handleClick(props.answers[2], "third");
         }}
+        disabled={disableButton}
       >
         {props.answers[2]}
         {optionsCorrectObj.third && (
@@ -159,6 +167,7 @@ export default function QuizOptions(props) {
         onClick={() => {
           handleClick(props.answers[3], "fourth");
         }}
+        disabled={disableButton}
       >
         {props.answers[3]}
         {optionsCorrectObj.fourth && (

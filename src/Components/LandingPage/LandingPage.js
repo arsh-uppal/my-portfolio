@@ -86,7 +86,7 @@ export default function LandingPage() {
         <Hidden xsDown>
           <Grid item xs={12} sm={3} className={classes.midLeft}>
             <img
-              src={require("../../images/cloud.svg")}
+              src={require("../../images/cloud.png")}
               alt="logo"
               className="cloudLeft"
             />
@@ -99,125 +99,88 @@ export default function LandingPage() {
         <Hidden xsDown>
           <Grid item xs={12} sm={3} className={classes.midRight}>
             <img
-              src={require("../../images/cloud.svg")}
+              src={require("../../images/cloud.png")}
               alt="logo"
               className="cloudRight"
             />
           </Grid>
         </Hidden>
         <Grid item xs={12} className="bottom">
+          <img
+            src={require("../../images/tree.svg")}
+            alt="tree"
+            className="maintree"
+          />
+          <img
+            src={require("../../images/tree.svg")}
+            alt="tree"
+            className="maintree2"
+          />
+          <img
+            src={require("../../images/grass.png")}
+            alt="grass"
+            className="flower"
+          />
+          <img
+            src={require("../../images/spring.png")}
+            alt="fly"
+            className="fly"
+          />
           <Mountain bgColor="#45b29a" className="firstMountain" zindex="4" />
           <div>
             <img
               src={require("../../images/house2.png")}
               alt="house2"
-              style={{
-                height: 55,
-                width: 50,
-                zIndex: 4,
-                position: "absolute",
-                marginTop: 70,
-                marginLeft: 0,
-              }}
+              className="house2"
             />
           </div>
           <div>
             <img
               src={require("../../images/house1.png")}
               alt="house1"
-              style={{
-                height: 40,
-                width: 40,
-                marginTop: 16,
-                marginLeft: 192,
-                position: "absolute",
-              }}
+              className="house1"
             />
           </div>
           <div>
             <img
               src={require("../../images/tree4.png")}
               alt="tree"
-              style={{
-                height: 65,
-                width: 60,
-                position: "absolute",
-                marginTop: 100,
-                marginLeft: -62,
-                zIndex: 4,
-              }}
+              className="treeA"
             />
           </div>
           <div>
             <img
               src={require("../../images/tree.png")}
               alt="tree"
-              style={{
-                height: 65,
-                width: 50,
-                position: "absolute",
-                marginTop: 138,
-                marginLeft: -96,
-                zIndex: 4,
-              }}
+              className="treeB"
             />
           </div>
           <div>
             <img
               src={require("../../images/tree4.png")}
               alt="tree"
-              style={{
-                height: 75,
-                width: 70,
-                position: "absolute",
-                marginTop: 175,
-                marginLeft: -146,
-                zIndex: 4,
-              }}
+              className="treeC"
             />
           </div>
           <div>
             <img
               src={require("../../images/tree.png")}
               alt="tree"
-              style={{
-                height: 30,
-                width: 25,
-                position: "absolute",
-                marginTop: 38,
-                marginLeft: 244,
-                zIndex: 4,
-                filter: "contrast(100%)",
-              }}
+              className="treeD"
             />
           </div>
           <div>
             <img
               src={require("../../images/tree.png")}
               alt="tree"
-              style={{
-                height: 40,
-                width: 30,
-                position: "absolute",
-                marginTop: 65,
-                marginLeft: 130,
-                zIndex: 4,
-                filter: "contrast(100%)",
-              }}
+              className="treeE"
             />
           </div>
           <div>
             <img
               src={require("../../images/panel.png")}
               alt="direction"
-              style={{
-                height: 35,
-                width: 35,
-                position: "absolute",
-                marginTop: 75,
-                marginLeft: 352,
-                zIndex: 4,
-              }}
+              className="panel"
             />
           </div>
           <Mountain bgColor="#328a76" className="secondMountain" zindex="2" />

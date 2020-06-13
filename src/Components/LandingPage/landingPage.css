@@ -10,8 +10,8 @@
 }
 
 .cloudLeft {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 100px;
     position: absolute;
     margin: auto;
     top: 150x;
@@ -19,19 +19,19 @@
     right: 0;
     bottom: 0;
     z-index: 2;
-    opacity: 0.9;
+    opacity: 0.08;
 }
 
 .cloudRight {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 100px;
     position: absolute;
     margin: auto;
     top: -180px;
     left: -20vw;
     right: 0;
     bottom: 0;
-    opacity: 0.8;
+    opacity: 0.05;
     z-index: 50;
 }
 
@@ -61,9 +61,31 @@
 
 /***************************/
 
-/*********Mountains*********/
+/********Centre Piece*******/
 
 /***************************/
+
+.maintree {
+    height: 300px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    animation-name: treesPopUp;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+.maintree2 {
+    height: 200px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -130px;
+    animation-name: treesPopUp;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
 
 .firstMountain {
     margin: auto;
@@ -72,6 +94,7 @@
     animation-name: mountainDrop;
     animation-duration: 1.5s;
     animation-timing-function: linear;
+    display: none;
 }
 
 .secondMountain {
@@ -81,6 +104,7 @@
     animation-name: mountainDrop;
     animation-duration: 1s;
     animation-timing-function: linear;
+    display: none;
 }
 
 .thirdMountain {
@@ -90,6 +114,134 @@
     animation-name: mountainDrop;
     animation-duration: 1s;
     animation-timing-function: linear;
+    display: none;
+}
+
+.house2 {
+    height: 55px;
+    width: 50px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 0px;
+    display: none;
+}
+
+.house1 {
+    height: 40px;
+    width: 40px;
+    margin-top: 16px;
+    margin-left: 192px;
+    position: absolute;
+    display: none;
+}
+
+.treeA {
+    height: 65px;
+    width: 60px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -62px;
+    z-index: 4;
+    display: none;
+}
+
+.treeB {
+    height: 65px;
+    width: 50px;
+    position: absolute;
+    margin-top: 138px;
+    margin-left: -96px;
+    z-index: 4;
+    display: none;
+}
+
+.treeC {
+    height: 75px;
+    width: 70px;
+    position: absolute;
+    margin-top: 175px;
+    margin-left: -146px;
+    z-index: 4;
+    display: none;
+}
+
+.treeD {
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 244px;
+    z-index: 4;
+    filter: contrast(100%);
+    display: none;
+}
+
+.treeE {
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 130px;
+    z-index: 4;
+    filter: contrast(100%);
+    display: none;
+}
+
+.panel {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 352px;
+    z-index: 4;
+    display: none;
+}
+
+.flower {
+    height: 20px;
+    z-index: 4;
+    width: 20px;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 170px;
+}
+
+.fly {
+    height: 20px;
+    z-index: 4;
+    width: 20px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+    .maintree {
+        height: 350px;
+        margin-top: -50px;
+        display: none;
+    }
+    .maintree2 {
+        height: 250px;
+        margin-top: 50px;
+        display: none;
+    }
+    .firstMountain {
+        display: block;
+    }
+    .secondMountain {
+        display: block;
+    }
+    .thirdMountain {
+        display: block;
+    }
+    .house2, .house1, .treeA, .treeB, .treeC, .treeD, .treeE, .panel {
+        display: block;
+    }
+    .flower, .fly {
+        display: none;
+    }
 }
 
 @keyframes mountainDrop {
@@ -100,6 +252,24 @@
         margin-top: 80px;
     }
     100% {}
+}
+
+@keyframes treesPopUp {
+    0% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.9;
+    }
 }
 
 /***************************/

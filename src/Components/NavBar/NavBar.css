@@ -1,12 +1,12 @@
 .linkStyle {
     padding-right: 4vw;
-    color:rgb(50, 138, 118);
-    font-size: 1.2em;
+    color: rgb(50, 138, 118);
+    font-size: 1.09em;
     text-decoration: none;
     font-weight: 600;
-  }
+}
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .linkStyle {
         padding-right: 10vw;
         font-size: 1.3em;
@@ -15,5 +15,5 @@
 }
 
 .linkStyle:hover {
-    color:rgb(146, 151, 150);
+    color: rgb(146, 151, 150);
 }
