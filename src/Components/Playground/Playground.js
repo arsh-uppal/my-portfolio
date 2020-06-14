@@ -1,10 +1,17 @@
 import React from "react";
+//Components
 import Collapsible from "./Collapsible";
 import PlayDivider from "./PlayDivider";
 import Footer from "../Footer/Footer";
+import OdysseyGallery from "./OdysseyGallery/OdysseyGallery";
+import OdysseyWebGallery from "./OdysseyGallery/OdysseyWebGallery";
+import TaskitonGallery from "./TaskitonGallery/TaskitonGallery";
+
+//Material UI
 import Grid from "@material-ui/core/Grid";
 import WorkTwoToneIcon from "@material-ui/icons/WorkTwoTone";
 import LocalFloristTwoToneIcon from "@material-ui/icons/LocalFloristTwoTone";
+
 import "./playground.css";
 
 //Components
@@ -23,8 +30,9 @@ export default function Playground() {
     >
       <div style={style}></div>
       <PlayDivider iccon={<LocalFloristTwoToneIcon />} heading={"New stuff"} />
-
       <div style={{ height: 30 }}></div>
+
+      {/* Man on the cycle*/}
       <Collapsible
         collapsibleName="On the cycle"
         collapsedStatus={true}
@@ -36,34 +44,57 @@ export default function Playground() {
 
       <PlayDivider iccon={<WorkTwoToneIcon />} heading={"Some of my work"} />
       <div style={{ height: 30 }}></div>
+
+      {/* Kanaban App*/}
+      <div>
+        <Collapsible
+          collapsibleName="A simple Kanban Board implementation"
+          collapsedStatus={false}
+          style={{ border: "solid" }}
+        >
+          <iframe
+            src="https://singh-arshdeep.github.io/react-dnd/#/"
+            title="A simple Kanban Board implementation"
+            width="100%"
+            height="550"
+          ></iframe>
+        </Collapsible>
+      </div>
+
+      {/* Taskiton*/}
       <div>
         <Collapsible
           collapsibleName="Taskiton - Project Management App"
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
-          <iframe
-            src="https://www.taskiton.wmdd.ca/#/"
-            title="Taskiton web app"
-            width="100%"
-            height="500"
-          ></iframe>
+          <TaskitonGallery />
         </Collapsible>
       </div>
+
+      {/* Odyssey App*/}
+      <div>
+        <Collapsible
+          collapsibleName="Odyssey - VR App"
+          collapsedStatus={false}
+          style={{ border: "solid" }}
+        >
+          <OdysseyGallery />
+        </Collapsible>
+      </div>
+
+      {/* Odyssey Website*/}
       <div>
         <Collapsible
           collapsibleName="Odyssey - promotional website"
           collapsedStatus={false}
-          style={{ border: "solid" }}
+          style={{ display: "block" }}
         >
-          <iframe
-            src="https://odyssey.wmdd.ca/"
-            title="Odyssey mobile game"
-            width="100%"
-            height="500"
-          ></iframe>
+          <OdysseyWebGallery />
         </Collapsible>
       </div>
+
+      {/* Arc resort*/}
       <div>
         <Collapsible
           collapsibleName="Arc resort"
@@ -78,7 +109,6 @@ export default function Playground() {
           ></iframe>
         </Collapsible>
       </div>
-
       <Grid item xs={12} className="footer">
         <Footer />
       </Grid>
