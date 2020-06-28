@@ -9,6 +9,7 @@
     overflow: none;
     height: 400px;
     width: 100%;
+    overflow: hidden;
 }
 
 .containerSvg {
@@ -56,5 +57,159 @@
     }
     to {
         transform: translateY(5%);
+    }
+}
+
+/* To the space */
+
+#starSet1 {
+    animation: starsMoving1 4s infinite linear;
+}
+
+#starSet2 {
+    transform: translatey(-80%);
+    animation: starsMoving2 4s infinite linear;
+    animation-delay: 2s;
+}
+
+@keyframes starsMoving1 {
+    0% {
+        transform: translatey(-50%);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translatey(70%);
+        opacity: 1;
+    }
+}
+
+@keyframes starsMoving2 {
+    0% {
+        transform: translatey(-50%)
+    }
+    100% {
+        transform: translatey(70%);
+    }
+}
+
+#moon {
+    animation: moonRotating 25s infinite alternate linear;
+    transform-origin: 30% 30%;
+    transform-box: fill-box;
+}
+
+@keyframes moonRotating {
+    from {
+        transform: rotateZ(0deg) scale();
+    }
+    to {
+        transform: rotateZ(360deg) scale(0.5);
+    }
+}
+
+@keyframes moonShrinking {
+    from {
+        transform: scale();
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
+
+#shootingStar1 {
+    animation: shootingStarsMoving 8s infinite linear;
+    opacity: 0.2;
+}
+
+#shootingStar2 {
+    animation: shootingStarsMoving 6s infinite linear;
+    opacity: 0.8;
+}
+
+@keyframes shootingStarsMoving {
+    0% {
+        transform: translatex(50%) translatey(-50%)
+    }
+    100% {
+        transform: translatex(-50%) translatey(50%);
+    }
+}
+
+#rocket {
+    animation: rocketbounicng 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes rocketbounicng {
+    from {
+        transform: translateY(-2%);
+    }
+    to {
+        transform: translateY(-4%);
+    }
+}
+
+/* Drone Up */
+
+#left-wing {
+    animation: rotateWing 0.5s infinite linear;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    z-index: 100;
+}
+
+#right-wing {
+    animation: rotateWing 0.5s infinite linear;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    z-index: 100;
+}
+
+@keyframes rotateWing {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+#camera {
+    animation: rotateCamera 4s infinite linear alternate-reverse;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    z-index: 100;
+}
+
+@keyframes rotateCamera {
+    from {
+        transform: rotateZ(-10deg);
+    }
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+
+#mainSvgContainer {
+    animation: allDrone 8s infinite linear alternate-reverse;
+}
+
+@keyframes allDrone {
+    0% {
+        transform: translateX(-30vw) translateY(40vh) scale(1);
+    }
+    20% {
+        transform: translateX(-25vw) translateY(20vh) scale(0.9);
+    }
+    40% {
+        transform: translateX(-10vw) translateY(10vh) scale(0.8);
+    }
+    60% {
+        transform: translateX(10vw) translateY(10vh) scale(0.8);
+    }
+    80% {
+        transform: translateX(25vw) translateY(20vh) scale(0.9);
+    }
+    100% {
+        transform: translateX(30vw) translateY(40vh) scale(1);
     }
 }

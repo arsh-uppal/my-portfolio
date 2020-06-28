@@ -4,7 +4,7 @@ import useTypewriter from "react-typewriter-hook";
 
 // let words = ["I am Arsh", "Developer", "Designer", "Full Stack"];
 
-const MagicOcean = ["Developer", "Designer", "Full Stack", "I am Arsh"];
+const MagicOcean = ["Full Stack", "I am Arsh", "Developer"];
 let index = 0;
 
 export default function CenterText() {
@@ -31,13 +31,13 @@ export default function CenterText() {
   //     []
   // )
 
-  const [magicName, setMagicName] = useState("I am Arsh");
+  const [magicName, setMagicName] = useState("Welcome!");
   const intervalRef = useRef({});
   const name = useTypewriter(magicName);
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       // index = index + 1 > 2 ? 0 : ++index + 1;
-      index = index > 2 ? 0 : ++index;
+      index = index > 1 ? 0 : ++index;
       setMagicName(MagicOcean[index]);
     }, 4000);
     return function clear() {

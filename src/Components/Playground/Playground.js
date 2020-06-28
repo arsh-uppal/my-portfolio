@@ -16,6 +16,8 @@ import "./playground.css";
 
 //Components
 import ManOnCycle from "./SvgComponents/ManOnCycle";
+import ToTheSpace from "./SvgComponents/ToTheSpace";
+import DroneUp from "./SvgComponents/DroneUp";
 
 export default function Playground() {
   const style = {
@@ -34,16 +36,51 @@ export default function Playground() {
 
       {/* Man on the cycle*/}
       <Collapsible
-        collapsibleName="On the cycle"
+        collapsibleName="On The Cycle"
         collapsedStatus={true}
         style={{ border: "solid" }}
       >
         <ManOnCycle />
       </Collapsible>
+
+      {/* To the space*/}
+      <Collapsible
+        collapsibleName="To The Space"
+        collapsedStatus={false}
+        style={{ border: "solid", height: "auto" }}
+      >
+        <ToTheSpace />
+      </Collapsible>
+
+      {/* Drone Up*/}
+      <Collapsible
+        collapsibleName="Drone Up"
+        collapsedStatus={false}
+        style={{ border: "solid", height: "auto" }}
+      >
+        <DroneUp />
+      </Collapsible>
+
       <div style={{ height: 30 }}></div>
 
       <PlayDivider iccon={<WorkTwoToneIcon />} heading={"Some of my work"} />
       <div style={{ height: 30 }}></div>
+
+      {/* React Movies App*/}
+      <div>
+        <Collapsible
+          collapsibleName="Movies App"
+          collapsedStatus={false}
+          style={{ border: "solid" }}
+        >
+          <iframe
+            src="https://singh-arshdeep.github.io/react-movie-project/"
+            title="A react + TS web app for movies and tv shows"
+            width="100%"
+            height="550"
+          ></iframe>
+        </Collapsible>
+      </div>
 
       {/* Kanaban App*/}
       <div>

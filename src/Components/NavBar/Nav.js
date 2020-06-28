@@ -42,7 +42,7 @@ export default function Nav(props) {
   return (
     <React.Fragment>
       <HideOnScroll {...props}>
-        <AppBar className={classes.styleNav}>
+        <AppBar className={classes.styleNav} position="static">
           <Toolbar>
             <div style={{ textAlign: "center", width: "100%" }}>
               <NavBar />

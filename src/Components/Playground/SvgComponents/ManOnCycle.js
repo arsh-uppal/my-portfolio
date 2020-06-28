@@ -13,6 +13,13 @@ const ManOnCycle = () => {
         color="primary"
         style={{ marginLeft: 5 }}
       />
+      <Chip
+        size="small"
+        label="CSS"
+        clickable
+        color="primary"
+        style={{ marginLeft: 5 }}
+      />
       <div className="mainDivSvg">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -471,7 +478,7 @@ const ManOnCycle = () => {
         </svg>
       </div>
       <Chip
-        label="#Credits - undraw.co & Dev Ed (youtube)"
+        label="#SVG image from - undraw.co & Inspired by DevEd(Youtube)"
         style={{ color: "rgb(50, 138, 118)", fontWeight: "600" }}
       />
     </div>
