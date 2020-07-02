@@ -74,7 +74,7 @@ export default function Playground() {
           style={{ border: "solid" }}
         >
           <iframe
-            src="https://singh-arshdeep.github.io/react-movie-project/"
+            src="https://arsh-uppal.github.io/react-movie-project/"
             title="A react + TS web app for movies and tv shows"
             width="100%"
             height="550"
@@ -90,7 +90,7 @@ export default function Playground() {
           style={{ border: "solid" }}
         >
           <iframe
-            src="https://singh-arshdeep.github.io/react-dnd/#/"
+            src="https://arsh-uppal.github.io/react-dnd/#/"
             title="A simple Kanban Board implementation"
             width="100%"
             height="550"
