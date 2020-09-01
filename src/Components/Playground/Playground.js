@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import OdysseyGallery from "./OdysseyGallery/OdysseyGallery";
 import OdysseyWebGallery from "./OdysseyGallery/OdysseyWebGallery";
 import TaskitonGallery from "./TaskitonGallery/TaskitonGallery";
+import KovanGallery from "./KovanGallery/KovanGallery";
 
 //Material UI
 import Grid from "@material-ui/core/Grid";
@@ -66,6 +67,17 @@ export default function Playground() {
       <PlayDivider iccon={<WorkTwoToneIcon />} heading={"Some of my work"} />
       <div style={{ height: 30 }}></div>
 
+      {/* Kovan*/}
+      <div>
+        <Collapsible
+          collapsibleName="Kovan - Home management app"
+          collapsedStatus={false}
+          style={{ border: "solid" }}
+        >
+          <KovanGallery />
+        </Collapsible>
+      </div>
+
       {/* React Movies App*/}
       <div>
         <Collapsible
@@ -82,16 +94,32 @@ export default function Playground() {
         </Collapsible>
       </div>
 
+      {/* Conway's Game of Life*/}
+      <div>
+        <Collapsible
+          collapsibleName="Conway's game of life"
+          collapsedStatus={false}
+          style={{ border: "solid" }}
+        >
+          <iframe
+            src="https://arsh-uppal.github.io/conway--gol/"
+            title="Conway's game of life"
+            width="100%"
+            height="550"
+          ></iframe>
+        </Collapsible>
+      </div>
+
       {/* Kanaban App*/}
       <div>
         <Collapsible
-          collapsibleName="A simple Kanban Board implementation"
+          collapsibleName="A simple kanban board implementation"
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
           <iframe
             src="https://arsh-uppal.github.io/react-dnd/#/"
-            title="A simple Kanban Board implementation"
+            title="A simple kanban board implementation"
             width="100%"
             height="550"
           ></iframe>
@@ -101,7 +129,7 @@ export default function Playground() {
       {/* Taskiton*/}
       <div>
         <Collapsible
-          collapsibleName="Taskiton - Project Management App"
+          collapsibleName="Taskiton - Project management app"
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
@@ -112,7 +140,7 @@ export default function Playground() {
       {/* Odyssey App*/}
       <div>
         <Collapsible
-          collapsibleName="Odyssey - VR App"
+          collapsibleName="Odyssey - VR app"
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
@@ -123,7 +151,7 @@ export default function Playground() {
       {/* Odyssey Website*/}
       <div>
         <Collapsible
-          collapsibleName="Odyssey - promotional website"
+          collapsibleName="Odyssey - Promotional website"
           collapsedStatus={false}
           style={{ display: "block" }}
         >
