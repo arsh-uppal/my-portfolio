@@ -478,7 +478,7 @@ const ManOnCycle = () => {
         </svg>
       </div>
       <Chip
-        label="#SVG image from - undraw.co & Inspired by DevEd(Youtube)"
+        label="#SVG image from - undraw.co"
         style={{ color: "rgb(50, 138, 118)", fontWeight: "600" }}
       />
     </div>
