@@ -6,13 +6,13 @@ export default function Footer() {
     <div className="footerContainer">
       <div className="socialContainer">
         <div className="socialImages">
-          <a
+          {/* <a
             href="https://www.instagram.com/im.__arsh/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={require("../../images/instagram.png")} alt="insta" />
-          </a>
+          </a> */}
           <a
             href="https://github.com/arsh-uppal/"
             target="_blank"

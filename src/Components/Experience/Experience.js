@@ -18,6 +18,19 @@ export default function Experience() {
           <div style={{ height: 80 }}></div>
           <div className="timeline">
             <ExperienceCard
+              cardPosition={"container left"}
+              title={"Web developer at Rentmoola"}
+              icon={
+                <WorkTwoToneIcon
+                  className="cardIcon"
+                  style={{ color: "teal" }}
+                />
+              }
+              year={"2020 - present"}
+              content={"I currently work here as a developer."}
+            />
+
+            <ExperienceCard
               cardPosition={"container right"}
               title={"Full stack web developer at C3D.io"}
               icon={
@@ -26,9 +39,9 @@ export default function Experience() {
                   style={{ color: "teal" }}
                 />
               }
-              year={"2019 - present"}
+              year={"2019 - 2020"}
               content={
-                "I am currently working part-time at C3D.io as a developer."
+                "It was a delight working with the awesome team of C3D.io for almost a year. I was mainly responsible for handling c3d's java version. More details at - https://c3d.io/java."
               }
             />
 
@@ -41,7 +54,7 @@ export default function Experience() {
                   style={{ color: "brown" }}
                 />
               }
-              year={"2019 - present"}
+              year={"2019 - 2020"}
               content={
                 "After working as a software engineer for almost three years, I quit my job to pursue an advanced course in mobile and web app development at Langara College."
               }
@@ -70,7 +83,7 @@ export default function Experience() {
                   style={{ color: "brown" }}
                 />
               }
-              year={"2015"}
+              year={"2011 - 2015"}
               content={
                 "I got my first job as software engineer while I was still in the last semester of my undergraduate studies."
               }

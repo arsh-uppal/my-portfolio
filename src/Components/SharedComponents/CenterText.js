@@ -4,7 +4,7 @@ import useTypewriter from "react-typewriter-hook";
 
 // let words = ["I am Arsh", "Developer", "Designer", "Full Stack"];
 
-const MagicOcean = ["Full Stack", "I am Arsh", "Developer"];
+const MagicOcean = ["Developer", "I am Arsh", "JS Enthusiast"];
 let index = 0;
 
 export default function CenterText() {
