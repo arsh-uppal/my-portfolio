@@ -3,6 +3,7 @@ import LandingPage from "./Components/LandingPage/LandingPage";
 import Nav from "./Components/NavBar/Nav";
 import Experience from "./Components/Experience/Experience";
 import Playground from "./Components/Playground/Playground";
+import OtherMiniProjects from "./Components/OtherMiniProjects/OtherMiniProjects";
 import "./App.css";
 import { Link } from "react-router-dom";
 import { Route } from "react-router-dom";
@@ -65,6 +66,7 @@ function App() {
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/experience" component={Experience} />
       <Route exact path="/playground" component={Playground} />
+      <Route exact path="/other" component={OtherMiniProjects} />
     </HashRouter>
   );
 }

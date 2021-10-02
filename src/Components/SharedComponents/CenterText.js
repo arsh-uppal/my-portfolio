@@ -39,7 +39,7 @@ export default function CenterText() {
       // index = index + 1 > 2 ? 0 : ++index + 1;
       index = index > 1 ? 0 : ++index;
       setMagicName(MagicOcean[index]);
-    }, 4000);
+    }, 8000);
     return function clear() {
       clearInterval(intervalRef.current);
     };
