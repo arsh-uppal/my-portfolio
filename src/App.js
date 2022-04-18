@@ -1,22 +1,19 @@
-import React from "react";
-import LandingPage from "./Components/LandingPage/LandingPage";
-import Nav from "./Components/NavBar/Nav";
-import Experience from "./Components/Experience/Experience";
-import Playground from "./Components/Playground/Playground";
-import OtherMiniProjects from "./Components/OtherMiniProjects/OtherMiniProjects";
-import "./App.css";
-import { Link } from "react-router-dom";
-import { Route } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
-
+import { Hidden } from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
 /********Material imports********/
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
-import { Hidden } from "@material-ui/core";
-
+import { createBrowserHistory } from "history";
+import React, { useState } from "react";
 // Google Analytics
 import ReactGA from "react-ga";
-import { createBrowserHistory } from "history";
+import { HashRouter, Link, Route } from "react-router-dom";
+import "./App.css";
+import Experience from "./Components/Experience/Experience";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import Nav from "./Components/NavBar/Nav";
+import OtherMiniProjects from "./Components/OtherMiniProjects/OtherMiniProjects";
+import Playground from "./Components/Playground/Playground";
+
 ReactGA.initialize(process.env.REACT_APP_GA_KEY);
 
 const history = createBrowserHistory();
@@ -43,9 +40,16 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
+  const [hideNav, sethideNav] = useState(false);
+  const hadleHideNav = (hide) => {
+    sethideNav(hide);
+  };
   return (
     <HashRouter>
-      <div className={classes.root}>
+      <div
+        className={classes.root}
+        style={hideNav ? { display: "none" } : { display: "block" }}
+      >
         <Grid container spacing={0}>
           <Hidden xsDown>
             <Grid item sm={4} className="topLogo">
@@ -66,7 +70,11 @@ function App() {
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/experience" component={Experience} />
       <Route exact path="/playground" component={Playground} />
-      <Route exact path="/other" component={OtherMiniProjects} />
+      <Route
+        exact
+        path="/other"
+        render={() => <OtherMiniProjects hadleHideNav={hadleHideNav} />}
+      />
     </HashRouter>
   );
 }
