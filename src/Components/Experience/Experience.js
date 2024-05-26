@@ -26,7 +26,7 @@ export default function Experience() {
                   style={{ color: "teal" }}
                 />
               }
-              year={"2020 - present"}
+              year={"2020 - 2023"}
               content={"I currently work here as a developer."}
             />
 
