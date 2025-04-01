@@ -31,7 +31,7 @@ export default function Quiz() {
   const [answers, setAnswers] = useState([]);
   const [correctAnswer, setCorrectAnswer] = useState("");
   async function fetchQuestion() {
-    const result = await axios(process.env.REACT_APP_TRIVIA_KEY);
+    const result = await axios("https://opentdb.com/api.php?amount=1");
     let question = result.data.results[0].question;
     question = question.replace(/&quot;/g, '"');
     setQuizQuestion(question);
@@ -52,7 +52,7 @@ export default function Quiz() {
       {quizQuestion ? (
         <div>
           <div className={classes.section1}>
-            <Typography variant="inherit">
+            <Typography variant='inherit'>
               <span dangerouslySetInnerHTML={{ __html: quizQuestion }}></span>
             </Typography>
           </div>
@@ -68,11 +68,11 @@ export default function Quiz() {
         </div>
       ) : (
         <div>
-          <Skeleton variant="rect" height={118} animation="wave" />
-          <Skeleton variant="text" animation="wave" />
-          <Skeleton variant="text" animation="wave" />
-          <Skeleton variant="text" animation="wave" />
-          <Skeleton variant="text" animation="wave" />
+          <Skeleton variant='rect' height={118} animation='wave' />
+          <Skeleton variant='text' animation='wave' />
+          <Skeleton variant='text' animation='wave' />
+          <Skeleton variant='text' animation='wave' />
+          <Skeleton variant='text' animation='wave' />
         </div>
       )}
     </div>
