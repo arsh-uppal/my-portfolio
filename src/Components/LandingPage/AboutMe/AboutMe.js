@@ -106,20 +106,20 @@ export default function AboutMe() {
     <div className={classes.root}>
       <Grid container spacing={0}>
         <Grid item xs={12} sm={12} className={classes.aboutMe}>
-          <div className="outerDivAbooutMe">
-            <div className="innerDivAbooutMe">
+          <div className='outerDivAbooutMe'>
+            <div className='innerDivAbooutMe'>
               <div>
                 <img
                   src={require("../../../images/myLogo.png")}
-                  alt="logo"
-                  className="imgAboutMe"
+                  alt='logo'
+                  className='imgAboutMe'
                 />
               </div>
-              <div className="mainAboutMe">
-                <span className="textAboutMe">
-                  Hi, I am Arsh. I’m always interested in hearing from former
-                  colleagues, managers, or just interesting creative folks, so
-                  feel free to contact.
+              <div className='mainAboutMe'>
+                <span className='textAboutMe'>
+                  Hi, I’m Arsh! I love connecting with former colleagues,
+                  mentors, and creative minds. Whether you have an exciting idea
+                  to share or just want to catch up, feel free to reach out!
                 </span>
                 <hr />
               </div>
@@ -128,10 +128,10 @@ export default function AboutMe() {
         </Grid>
 
         <Grid item xs={12} sm={7} className={classes.frondEndInfo}>
-          <div className="outerDivfrondEndInfo">
-            <div className="innerDivfrondEndInfo">
-              <div className="textfrondEndInfo">
-                <span className="textAboutMe">
+          <div className='outerDivfrondEndInfo'>
+            <div className='innerDivfrondEndInfo'>
+              <div className='textfrondEndInfo'>
+                <span className='textAboutMe'>
                   <h2>Web App which matters</h2>A website should speak for
                   itself. I can help you create complex webapps using frameworks
                   such as React, Angular, etc.
@@ -141,12 +141,12 @@ export default function AboutMe() {
           </div>
         </Grid>
         <Grid item xs={12} sm={5} className={classes.frontEndTools}>
-          <div className="outerDivfrontEndTools">
-            <div className="innerDivfrontEndTools">
-              <div className="imgfrontEndTools">
+          <div className='outerDivfrontEndTools'>
+            <div className='innerDivfrontEndTools'>
+              <div className='imgfrontEndTools'>
                 <img
                   src={urlFrontDevIcon}
-                  alt="logo"
+                  alt='logo'
                   style={{
                     maxHeight: "80%",
                     maxWidth: "80%",
@@ -161,11 +161,11 @@ export default function AboutMe() {
         </Grid>
 
         <Grid item xs={12} sm={5} className={classes.backEndTools}>
-          <div className="outerDivbackEndTools">
-            <div className="innerDivbackEndTools">
+          <div className='outerDivbackEndTools'>
+            <div className='innerDivbackEndTools'>
               <img
                 src={urlBackDevIcon}
-                alt="logo"
+                alt='logo'
                 style={{
                   maxHeight: "80%",
                   maxWidth: "80%",
@@ -178,13 +178,13 @@ export default function AboutMe() {
           </div>
         </Grid>
         <Grid item xs={12} sm={7} className={classes.backEndInfo}>
-          <div className="outerDivbackEndInfo">
-            <div className="innerDivbackEndInfo">
-              <div className="textbackEndInfo">
-                <span className="textAboutMe">
+          <div className='outerDivbackEndInfo'>
+            <div className='innerDivbackEndInfo'>
+              <div className='textbackEndInfo'>
+                <span className='textAboutMe'>
                   <h2>A Robust Back End</h2>A great application needs an even
                   greater backend. I can help you create a sturdy and efficient
-                  backend in Java and SPRING boot.
+                  backend in Java and Spring boot.
                 </span>
               </div>
             </div>

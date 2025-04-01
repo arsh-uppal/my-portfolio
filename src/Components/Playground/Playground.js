@@ -37,7 +37,7 @@ export default function Playground() {
 
       {/* Man on the cycle*/}
       <Collapsible
-        collapsibleName="On The Cycle"
+        collapsibleName='On a Bike'
         collapsedStatus={true}
         style={{ border: "solid" }}
       >
@@ -46,7 +46,7 @@ export default function Playground() {
 
       {/* To the space*/}
       <Collapsible
-        collapsibleName="To The Space"
+        collapsibleName='To the Space'
         collapsedStatus={false}
         style={{ border: "solid", height: "auto" }}
       >
@@ -55,7 +55,7 @@ export default function Playground() {
 
       {/* Drone Up*/}
       <Collapsible
-        collapsibleName="Drone Up"
+        collapsibleName='Drone Up'
         collapsedStatus={false}
         style={{ border: "solid", height: "auto" }}
       >
@@ -70,7 +70,7 @@ export default function Playground() {
       {/* Kovan*/}
       <div>
         <Collapsible
-          collapsibleName="Kovan - Home management app"
+          collapsibleName='Kovan - Home management app'
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
@@ -81,15 +81,15 @@ export default function Playground() {
       {/* React Movies App*/}
       <div>
         <Collapsible
-          collapsibleName="Movies App"
+          collapsibleName='Movies App'
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
           <iframe
-            src="https://arsh-uppal.github.io/react-movie-project/"
-            title="A react + TS web app for movies and tv shows"
-            width="100%"
-            height="550"
+            src='https://arsh-uppal.github.io/react-movie-project/'
+            title='A react + TS web app for movies and tv shows'
+            width='100%'
+            height='550'
           ></iframe>
         </Collapsible>
       </div>
@@ -102,10 +102,10 @@ export default function Playground() {
           style={{ border: "solid" }}
         >
           <iframe
-            src="https://arsh-uppal.github.io/conway--gol/"
+            src='https://arsh-uppal.github.io/conway--gol/'
             title="Conway's game of life"
-            width="100%"
-            height="550"
+            width='100%'
+            height='550'
           ></iframe>
         </Collapsible>
       </div>
@@ -113,15 +113,15 @@ export default function Playground() {
       {/* Kanaban App*/}
       <div>
         <Collapsible
-          collapsibleName="A simple kanban board implementation"
+          collapsibleName='A simple kanban board implementation'
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
           <iframe
-            src="https://arsh-uppal.github.io/react-dnd/#/"
-            title="A simple kanban board implementation"
-            width="100%"
-            height="550"
+            src='https://arsh-uppal.github.io/react-dnd/#/'
+            title='A simple kanban board implementation'
+            width='100%'
+            height='550'
           ></iframe>
         </Collapsible>
       </div>
@@ -129,7 +129,7 @@ export default function Playground() {
       {/* Taskiton*/}
       <div>
         <Collapsible
-          collapsibleName="Taskiton - Project management app"
+          collapsibleName='Taskiton - Project management app'
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
@@ -140,7 +140,7 @@ export default function Playground() {
       {/* Odyssey App*/}
       <div>
         <Collapsible
-          collapsibleName="Odyssey - VR app"
+          collapsibleName='Odyssey - VR app'
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
@@ -151,7 +151,7 @@ export default function Playground() {
       {/* Odyssey Website*/}
       <div>
         <Collapsible
-          collapsibleName="Odyssey - Promotional website"
+          collapsibleName='Odyssey - Promotional website'
           collapsedStatus={false}
           style={{ display: "block" }}
         >
@@ -162,19 +162,19 @@ export default function Playground() {
       {/* Arc resort*/}
       <div>
         <Collapsible
-          collapsibleName="Arc resort"
+          collapsibleName='Arc resort'
           collapsedStatus={false}
           style={{ border: "solid" }}
         >
           <iframe
-            src="https://arcresort.arsh.wmdd.ca/"
-            title="Arc resort website"
-            width="100%"
-            height="500"
+            src='https://arcresort.arsh.wmdd.ca/'
+            title='Arc resort website'
+            width='100%'
+            height='500'
           ></iframe>
         </Collapsible>
       </div>
-      <Grid item xs={12} className="footer">
+      <Grid item xs={12} className='footer'>
         <Footer />
       </Grid>
     </div>

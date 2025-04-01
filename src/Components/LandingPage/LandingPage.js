@@ -58,28 +58,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// let handleBirdShoot = () => {
-//   console.log("hey I am shot");
-// };
-
 export default function LandingPage() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <div className="snowContainer">
-        <Snowfall color="white" snowflakeCount={50} />
+      <div className='snowContainer'>
+        <Snowfall color='white' snowflakeCount={50} />
       </div>
       <ChatPopUp />
       <QuizPopUp />
       <div>
-        <div className="bird-container bird-container--one">
-          <div className="bird bird--one"></div>
+        <div className='bird-container bird-container--one'>
+          <div className='bird bird--one'></div>
         </div>
-        <div className="bird-container bird-container--three">
-          <div className="bird bird--three"></div>
+        <div className='bird-container bird-container--three'>
+          <div className='bird bird--three'></div>
         </div>
-        <div className="bird-container bird-container--four">
-          <div className="bird bird--four"></div>
+        <div className='bird-container bird-container--four'>
+          <div className='bird bird--four'></div>
         </div>
       </div>
       <Grid container spacing={0}>
@@ -87,8 +83,8 @@ export default function LandingPage() {
           <Grid item xs={12} sm={3} className={classes.midLeft}>
             <img
               src={require("../../images/cloud.png")}
-              alt="logo"
-              className="cloudLeft"
+              alt='logo'
+              className='cloudLeft'
             />
           </Grid>
         </Hidden>
@@ -100,96 +96,96 @@ export default function LandingPage() {
           <Grid item xs={12} sm={3} className={classes.midRight}>
             <img
               src={require("../../images/cloud.png")}
-              alt="logo"
-              className="cloudRight"
+              alt='logo'
+              className='cloudRight'
             />
           </Grid>
         </Hidden>
-        <Grid item xs={12} className="bottom">
+        <Grid item xs={12} className='bottom'>
           <img
             src={require("../../images/tree.svg")}
-            alt="tree"
-            className="maintree"
+            alt='tree'
+            className='maintree'
           />
           <img
             src={require("../../images/tree.svg")}
-            alt="tree"
-            className="maintree2"
+            alt='tree'
+            className='maintree2'
           />
           <img
             src={require("../../images/grass.png")}
-            alt="grass"
-            className="flower"
+            alt='grass'
+            className='flower'
           />
           <img
             src={require("../../images/spring.png")}
-            alt="fly"
-            className="fly"
+            alt='fly'
+            className='fly'
           />
-          <Mountain bgColor="#45b29a" className="firstMountain" zindex="4" />
+          <Mountain bgColor='#45b29a' className='firstMountain' zindex='4' />
           <div>
             <img
               src={require("../../images/house2.png")}
-              alt="house2"
-              className="house2"
+              alt='house2'
+              className='house2'
             />
           </div>
           <div>
             <img
               src={require("../../images/house1.png")}
-              alt="house1"
-              className="house1"
+              alt='house1'
+              className='house1'
             />
           </div>
           <div>
             <img
               src={require("../../images/tree4.png")}
-              alt="tree"
-              className="treeA"
+              alt='tree'
+              className='treeA'
             />
           </div>
           <div>
             <img
               src={require("../../images/tree.png")}
-              alt="tree"
-              className="treeB"
+              alt='tree'
+              className='treeB'
             />
           </div>
           <div>
             <img
               src={require("../../images/tree4.png")}
-              alt="tree"
-              className="treeC"
+              alt='tree'
+              className='treeC'
             />
           </div>
           <div>
             <img
               src={require("../../images/tree.png")}
-              alt="tree"
-              className="treeD"
+              alt='tree'
+              className='treeD'
             />
           </div>
           <div>
             <img
               src={require("../../images/tree.png")}
-              alt="tree"
-              className="treeE"
+              alt='tree'
+              className='treeE'
             />
           </div>
           <div>
             <img
               src={require("../../images/panel.png")}
-              alt="direction"
-              className="panel"
+              alt='direction'
+              className='panel'
             />
           </div>
-          <Mountain bgColor="#328a76" className="secondMountain" zindex="2" />
-          <Mountain bgColor="white" className="thirdMountain" zindex="3" />
+          <Mountain bgColor='#328a76' className='secondMountain' zindex='2' />
+          <Mountain bgColor='white' className='thirdMountain' zindex='3' />
         </Grid>
-        <Grid item xs={12} className="secondTop">
+        <Grid item xs={12} className='secondTop'>
           <AboutMe />
         </Grid>
-        <Grid item xs={12} className="footer" style={{ marginTop: 20 }}>
+        <Grid item xs={12} className='footer' style={{ marginTop: 20 }}>
           <Footer />
         </Grid>
       </Grid>
