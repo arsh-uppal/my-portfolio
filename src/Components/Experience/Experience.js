@@ -1,7 +1,6 @@
 import React from "react";
 import "./experience.css";
 import ExperienceCard from "./ExperienceCard";
-import ChildFriendlyTwoToneIcon from "@material-ui/icons/ChildFriendlyTwoTone";
 import SchoolTwoToneIcon from "@material-ui/icons/SchoolTwoTone";
 import WorkTwoToneIcon from "@material-ui/icons/WorkTwoTone";
 import FlightTakeoffTwoToneIcon from "@material-ui/icons/FlightTakeoffTwoTone";
