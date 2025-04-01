@@ -10,6 +10,8 @@ object-assign
   All rights reserved.
 */
 
+/*! https://mths.be/he v1.2.0 by @mathias | MIT license */
+
 /**
  * A better abstraction over CSS.
  *
