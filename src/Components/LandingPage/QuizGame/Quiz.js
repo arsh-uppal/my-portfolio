@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import axios from "axios";
 import Skeleton from "@material-ui/lab/Skeleton";
 import QuizOptions from "./QuizOptions";
+import he from "he"; // HTML decoding library
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,68 +13,75 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.2em",
     fontWeight: "600",
   },
-  chip: {
-    margin: theme.spacing(0.5),
-  },
-  section1: {
-    margin: theme.spacing(3, 2),
-  },
-  section2: {
-    margin: theme.spacing(2),
-  },
-  section3: {
-    margin: theme.spacing(3, 1, 1),
-  },
+  section1: { margin: theme.spacing(3, 2) },
+  section2: { margin: theme.spacing(2) },
 }));
 
 export default function Quiz() {
-  const [quizQuestion, setQuizQuestion] = useState(false);
-  const [answers, setAnswers] = useState([]);
-  const [correctAnswer, setCorrectAnswer] = useState("");
-  async function fetchQuestion() {
-    const result = await axios("https://opentdb.com/api.php?amount=1");
-    let question = result.data.results[0].question;
-    question = question.replace(/&quot;/g, '"');
-    setQuizQuestion(question);
-    let _answers = [
-      ...result.data.results[0].incorrect_answers,
-      result.data.results[0].correct_answer,
-    ];
-    _answers.sort(() => Math.random() - 0.5);
-    setAnswers(_answers);
-    setCorrectAnswer(result.data.results[0].correct_answer);
+  const [questions, setQuestions] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch 100 questions at once
+  async function fetchQuestions() {
+    setLoading(true);
+    try {
+      const { data } = await axios.get(
+        "https://opentdb.com/api.php?amount=100&type=multiple"
+      );
+      const fetchedQuestions = data.results.map((result) => ({
+        question: he.decode(result.question),
+        correct_answer: result.correct_answer,
+        answers: [...result.incorrect_answers, result.correct_answer].sort(
+          () => 0.5 - Math.random()
+        ),
+      }));
+      setQuestions(fetchedQuestions);
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching questions:", error);
+      setLoading(false);
+    }
   }
+
   useEffect(() => {
-    fetchQuestion();
+    fetchQuestions();
   }, []);
+
+  const nextQuestion = () => {
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
   const classes = useStyles();
+  const currentQuestion = questions[currentIndex];
+
   return (
     <div className={classes.root}>
-      {quizQuestion ? (
-        <div>
+      {loading || !currentQuestion ? (
+        <>
+          <Skeleton variant='rectangular' height={118} animation='wave' />
+          {[...Array(4)].map((_, index) => (
+            <Skeleton key={index} variant='text' animation='wave' />
+          ))}
+        </>
+      ) : (
+        <>
           <div className={classes.section1}>
-            <Typography variant='inherit'>
-              <span dangerouslySetInnerHTML={{ __html: quizQuestion }}></span>
-            </Typography>
+            <Typography
+              variant='inherit'
+              dangerouslySetInnerHTML={{ __html: currentQuestion.question }}
+            />
           </div>
           <div className={classes.section2}>
-            <div>
-              <QuizOptions
-                answers={answers}
-                correctAnswer={correctAnswer}
-                fetchQuestion={fetchQuestion}
-              />
-            </div>
+            <QuizOptions
+              answers={currentQuestion.answers}
+              correctAnswer={currentQuestion.correct_answer}
+              nextQuestion={nextQuestion}
+            />
           </div>
-        </div>
-      ) : (
-        <div>
-          <Skeleton variant='rect' height={118} animation='wave' />
-          <Skeleton variant='text' animation='wave' />
-          <Skeleton variant='text' animation='wave' />
-          <Skeleton variant='text' animation='wave' />
-          <Skeleton variant='text' animation='wave' />
-        </div>
+        </>
       )}
     </div>
   );
